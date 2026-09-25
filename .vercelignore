@@ -1,0 +1,62 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+
+# Production
+build
+dist
+.next
+out
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Database migrations (keep schema files but ignore temp files)
+*.sql.bak
+*.sql.tmp
+
+# Documentation (optional - remove if you want docs deployed)
+md/
+
+# Temporary files
+*.log
+tmp/
+temp/
+
+
+# Not needed at build/runtime
+database/
+docs/
+*.md
+.claude/
+.git/
+*.sh
+*.ps1
+test-*
+sample-*
+tsconfig.tsbuildinfo
