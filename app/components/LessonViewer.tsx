@@ -10,6 +10,7 @@ import AutoResizeTextContent from '@/app/components/AutoResizeTextContent';
 import QuizStatusButton from '@/app/components/QuizStatusButton';
 import { sanitizeHtmlWithEmbeds } from '@/lib/sanitize';
 import SlideshowViewer from '@/app/components/SlideshowViewer';
+import InteractivePlayer from '@/app/components/interactive/InteractivePlayer';
 import { BookmarkButton, NotesPanel } from '@/app/components/student';
 import Link from 'next/link';
 import { StickyNote, Bookmark, ChevronDown, ChevronUp, ChevronsDownUp, ChevronsUpDown, Check, Square, Maximize2, X } from 'lucide-react';
@@ -17,7 +18,7 @@ import { useActivityLogger, ACTIVITY_TYPES, ITEM_TYPES, ACTIONS } from '@/lib/ho
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ContentItem = {
-  type: 'video'|'text'|'slideshow'|'file'|'embed'|'quiz'|'assignment'|'image'|'pdf'|'audio'|'interactive_video'|'code_sandbox'|'label'|'survey';
+  type: 'video'|'text'|'slideshow'|'file'|'embed'|'quiz'|'assignment'|'image'|'pdf'|'audio'|'interactive_video'|'code_sandbox'|'label'|'survey'|'interactive';
   title: string;
   data: any;
   id?: string;
@@ -1102,6 +1103,39 @@ export default function LessonViewer({ content, lessonId, courseId, lessonTitle,
           </div>
         );
       }
+
+      case 'interactive':
+        return (
+          <div className="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300">
+            {item.title && (
+              <div
+                className="bg-gradient-to-r from-blue-500 to-indigo-600 px-4 sm:px-6 py-3 sm:py-4 cursor-pointer select-none"
+                onClick={() => toggleCollapse(index)}
+              >
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm sm:text-base md:text-xl font-bold text-white flex items-center flex-1 min-w-0">
+                    <span className="truncate">{item.title}</span>
+                  </h3>
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <ContentProgressCheckbox index={index} item={item} />
+                    <div className="p-1 rounded hover:bg-white/20 transition-colors">
+                      {isCollapsed(index) ? (
+                        <ChevronDown className="w-5 h-5 text-white" />
+                      ) : (
+                        <ChevronUp className="w-5 h-5 text-white" />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            <div className={`transition-all duration-300 ease-in-out overflow-hidden ${isCollapsed(index) ? 'max-h-0 opacity-0' : 'max-h-[8000px] opacity-100'}`}>
+              <div className="p-4 sm:p-6">
+                <InteractivePlayer content={item.data} />
+              </div>
+            </div>
+          </div>
+        );
 
       case 'quiz':
         // Check if this quiz was deleted (not found)
