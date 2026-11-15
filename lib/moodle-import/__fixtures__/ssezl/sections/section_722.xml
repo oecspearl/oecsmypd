@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section id="722">
+  <number>1</number>
+  <name>Introduction</name>
+  <summary>&lt;p&gt;&lt;img class="img-fluid" role="presentation" src="@@PLUGINFILE@@/Module%2013%20Banner.png" alt="" width="1200" height="300"&gt;&lt;/p&gt;</summary>
+  <summaryformat>1</summaryformat>
+  <sequence>2335,2336,2343</sequence>
+  <visible>1</visible>
+  <availabilityjson>{"op":"&amp;","c":[],"showc":[]}</availabilityjson>
+  <component>$@NULL@$</component>
+  <itemid>$@NULL@$</itemid>
+  <timemodified>1736299690</timemodified>
+</section>

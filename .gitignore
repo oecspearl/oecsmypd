@@ -34,3 +34,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# local supabase schema dump (generated from prod; staging-only)
+/supabase/prod-schema.sql

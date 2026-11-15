@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<activity id="185" moduleid="2339" modulename="assign" contextid="9614">
+  <assign id="185">
+    <name>Applied Learning Product 1</name>
+    <intro>&lt;p&gt;&lt;strong&gt;&lt;img class="img-fluid" role="presentation" src="@@PLUGINFILE@@/Module%2013%20Banner.png" alt="" width="1200" height="300"&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Applied Learning Product 1: Observation of child-to-child interactions – regarding social and emotional skills&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This week you are asked to observe a few minutes of child-to-child interactions (not during teacher-led sessions).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Targeted Outcome(s): &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List specific social and emotional skills appropriate for 3-4-year-old children&lt;/li&gt;
+&lt;li&gt;Implement specific teaching/learning strategies to support the development of social and emotional skills in young children. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this activity, the participants will observe 2 separate child-to-child interactions and write brief notes about what occurred.  Two brief descriptions of children using (or not using) social and emotional skills will be posted to the Moodle site.  During subsequent class discussions, the participants will relate the interactions to social and emotional skill development.  The participants will identify supportive adult responses to the examples of children’s interactions. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instructions:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Briefly describe 2 interactions (with different children, or at other times).  Post these two descriptions. &lt;/p&gt;
+&lt;p&gt;Please be prepared to share what you observed about children’s social and emotional skills during the next Synchronous Session (see guiding questions below).  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li style="list-style-type: none;"&gt;
+&lt;ul&gt;
+&lt;li&gt;What social skills did you observe children using?&lt;/li&gt;
+&lt;li&gt;What social skills did you observe children needing support to learn?&lt;/li&gt;
+&lt;li&gt;What emotional skills did you observe children using?&lt;/li&gt;
+&lt;li&gt;What emotional skills did you observe children needing support to learn?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</intro>
+    <introformat>1</introformat>
+    <alwaysshowdescription>1</alwaysshowdescription>
+    <submissiondrafts>1</submissiondrafts>
+    <sendnotifications>0</sendnotifications>
+    <sendlatenotifications>0</sendlatenotifications>
+    <sendstudentnotifications>0</sendstudentnotifications>
+    <duedate>0</duedate>
+    <cutoffdate>0</cutoffdate>
+    <gradingduedate>0</gradingduedate>
+    <allowsubmissionsfromdate>1736222400</allowsubmissionsfromdate>
+    <grade>100</grade>
+    <timemodified>1736291820</timemodified>
+    <completionsubmit>1</completionsubmit>
+    <requiresubmissionstatement>1</requiresubmissionstatement>
+    <teamsubmission>0</teamsubmission>
+    <requireallteammemberssubmit>0</requireallteammemberssubmit>
+    <teamsubmissiongroupingid>0</teamsubmissiongroupingid>
+    <blindmarking>0</blindmarking>
+    <hidegrader>0</hidegrader>
+    <revealidentities>0</revealidentities>
+    <attemptreopenmethod>manual</attemptreopenmethod>
+    <maxattempts>-1</maxattempts>
+    <markingworkflow>1</markingworkflow>
+    <markingallocation>0</markingallocation>
+    <markinganonymous>0</markinganonymous>
+    <preventsubmissionnotingroup>1</preventsubmissionnotingroup>
+    <activity></activity>
+    <activityformat>1</activityformat>
+    <timelimit>0</timelimit>
+    <submissionattachments>0</submissionattachments>
+    <userflags>
+    </userflags>
+    <submissions>
+      <submission id="9610">
+        <userid>593</userid>
+        <timecreated>1737587123</timecreated>
+        <timemodified>1744127066</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9610</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9610</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9785">
+        <userid>987</userid>
+        <timecreated>1738794382</timecreated>
+        <timemodified>1741206787</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9785</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9785</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9794">
+        <userid>1003</userid>
+        <timecreated>1738874809</timecreated>
+        <timemodified>1739058831</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9794</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;1.Lacing the beads:&lt;/p&gt;
+&lt;p&gt; children were given  beads and they were allowed to place the amount they wanted in the plate that was handed to them.&lt;/p&gt;
+&lt;p&gt; Communication skills :&lt;/p&gt;
+&lt;p&gt;Children spoke about the colors that was chosen  .Tina  and Joe  sitting next to each other spoke of their favorite color as they place the beads on the lace .&lt;/p&gt;
+&lt;p&gt;The children were  patient and focused as they try to get the lace into the hole of each bead .&lt;/p&gt;
+&lt;p&gt;They also  raced with each other. Joe  shouted" I'm going to win". As the competition continues between the two children,  Tina did not finish first she was a bit upset and was saying" I'm not playing with you."&lt;/p&gt;
+&lt;p&gt;Joe answered "I will let you win the next time ok" , let's do it again . "No am not playing , said Tina with a sad face.&lt;/p&gt;
+&lt;p&gt;Touching her hand Joe said "go  first I will let you win" Tina was excited as she started to lace the beads. They both laughed and tackle the beads again. A short while after Tina said to "Joe but you have more, look yours is longer"&lt;/p&gt;
+&lt;p&gt;Tina started saying " not fare as she rest her item on the table and cross her hands over her chest with an angry facial expression.&lt;/p&gt;
+&lt;p&gt;-After observing for a while I  intervened and  explained to the children that it is ok to be competitive sometimes, it's ok for someone to win in something they are good at .&lt;/p&gt;
+&lt;p&gt;I also told them that anyone can be a winner .and that there are other things that you might be better at that Joe. I also gave the example of being competitive for our  sports meet ,we just have to work hard and deligent so we an win .&lt;/p&gt;
+&lt;p&gt;Tina needed the support with empathy.understanding that it's ok for someone else to win .&lt;/p&gt;
+&lt;p&gt;         Skills learnt &lt;/p&gt;
+&lt;p&gt;Fine motor skills: manipulating the lace and the beads , which helps with hand / eye co ordination &lt;/p&gt;
+&lt;p&gt;They were concentrating - focusing on the task at hand , which inturn improves their attention span &lt;/p&gt;
+&lt;p&gt;Children were able to follow instructions - being creative choosing their own colors &lt;/p&gt;
+&lt;p&gt;Children also develop social emotion skills as they express how they feel.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;2. Dramatic play : using kitchen set&lt;/p&gt;
+&lt;p&gt;Social skills observed &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;there was alot of communication, role playing and discussing what they where cooking .&lt;/li&gt;
+&lt;li&gt;Co operation - working together in an imaginary pretend kitchen , they learn team work as they share the utensils &lt;/li&gt;
+&lt;li&gt;They took on different roles as they play with each other.&lt;/li&gt;
+&lt;li&gt;Conflict resolution - when the disagreed on something, when  Tina wanted the stove but another child was using it ,she ask James to take it for her .James then pulled it from Seara , but when Seara started to cry Tina gave it back to her,and  asked her to stop crying.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Imaginative play - the children cooking and engaging with each other at the setting express themselves socially and emotionally, they never called on me to resolve their issues .&lt;/p&gt;
+&lt;p&gt;There was  hardly any need for caregiver to intervene, since children were able to solve their problems on their own.&lt;/p&gt;
+&lt;p&gt;They learnt some vital emotional skills &lt;/p&gt;
+&lt;p&gt;Self regulation - they waited for their turn to use some of the utensils and even asked for it politely.&lt;/p&gt;
+&lt;p&gt;They were able to express their feelings during cooking, they were very excited as they took the plates  to  dish out the pretend food. Children learn to share with each other .&lt;/p&gt;
+&lt;p&gt;As children  are engaged in this type of play it help them boost up their self confidence and self esteem. They initiated that and showed that they were incharge of what was being done.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;there was also self awareness: paid attention to the feelings of others.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There was hardly any need for teacher's intervention as children quickly learn to say I'm sorry or when a friend cry if something was taken away , they were quick to give it back .&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9794</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9787">
+        <userid>1004</userid>
+        <timecreated>1738796806</timecreated>
+        <timemodified>1738801207</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9787</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p style="text-align: center;"&gt;First interaction.&lt;/p&gt;
+&lt;p&gt;During freeplay i noticed a child sitting at the table on her own while the other children played together. I walked up to her and asked why she was sitting on her own. She said that the other girls did not want her to play with them. I then called over the girls and asked why she was not allowed to play. The girls indicated to me that she never came up to them to ask to play. Realising what was said by the other children she then asked them to play and they agreed. I praised her for realising her error and making the situation better for herself.  &lt;/p&gt;
+&lt;p style="text-align: center;"&gt;Second interaction. &lt;/p&gt;
+&lt;p style="text-align: left;"&gt;There is a student who is an only child in his family and has no younger family members to interact with. when he comes to school he is unsure of how to interact with the other children. I would observe him circling them first then maybe if they are building a tower and he would knock it down. The children would either complain about him or ask him to stop. Sometimes when i would intervene he would shut down and not answer any questions, until i would ask the other children how do they feel about what he did and to explain to him how we make friends and how to treat a friend. We also had a lesson on friendship and modeled positive behaviour of friendship. &lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9787</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9951">
+        <userid>1005</userid>
+        <timecreated>1740744457</timecreated>
+        <timemodified>1740744457</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9952">
+        <userid>1007</userid>
+        <timecreated>1740744457</timecreated>
+        <timemodified>1740744457</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9953">
+        <userid>1014</userid>
+        <timecreated>1740744457</timecreated>
+        <timemodified>1740744457</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9954">
+        <userid>1015</userid>
+        <timecreated>1740744457</timecreated>
+        <timemodified>1740744457</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9732">
+        <userid>1263</userid>
+        <timecreated>1738606169</timecreated>
+        <timemodified>1739057106</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9732</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;One mornings nick enters play did not greet anyone ,Rita call and said "Nick you did not say good morning.&lt;/p&gt;
+&lt;p&gt;The social skills i observed the children were using self awareness&lt;/p&gt;
+&lt;p&gt;The social skills  observed children needing support to learn are:&lt;/p&gt;
+&lt;p&gt;-consistently remind them to use phrases like please, thank you, good morning etc.&lt;/p&gt;
+&lt;p&gt;-praise them when they demonstrate good manners.&lt;/p&gt;
+&lt;p&gt;use books that features characters demonstrating good manners.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;It's free play Zane chooses his own toy. However Aziel wanted to share the same toy Zane did not want to share. Rita came and speak with Zane asking him to share with Aziel and he is making him feel sad, and asking him how would you feel if someone did the same to you.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The emotional skills i observe children used was self management.&lt;/p&gt;
+&lt;p&gt;The emotional skills i observed children needing to support to learn are:&lt;/p&gt;
+&lt;p&gt;-provide comfort&lt;/p&gt;
+&lt;p&gt;-reading books about emotions&lt;/p&gt;
+&lt;p&gt;-playing with puppets&lt;/p&gt;
+&lt;p&gt;-give a listen ear&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9732</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9955">
+        <userid>1267</userid>
+        <timecreated>1740744458</timecreated>
+        <timemodified>1740744458</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9786">
+        <userid>1321</userid>
+        <timecreated>1738794400</timecreated>
+        <timemodified>1738794400</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9956">
+        <userid>2057</userid>
+        <timecreated>1740744643</timecreated>
+        <timemodified>1740744643</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9957">
+        <userid>2122</userid>
+        <timecreated>1740744643</timecreated>
+        <timemodified>1740744643</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9728">
+        <userid>2123</userid>
+        <timecreated>1738529637</timecreated>
+        <timemodified>1741884371</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9728</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;1: In the preschool class I observed that every morning students welcome thier peers with a greetings and hugs .they are always happy to see each other . They also always say their goodbyes with hugs . They are starting to become aware of feelings for other people and want to have friendships &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;2: there is this 4 year old girl that if she finds somebody else's bag in her cubby she starts to cry and say that she is sad because somebody takes up her space . She will then call the owner of the bag to come take it or places it in their cubby . She is able to show self- awareness and empathy &lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9728</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9759">
+        <userid>2124</userid>
+        <timecreated>1738695733</timecreated>
+        <timemodified>1738810570</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9759</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;Interaction #1. Taking turns on the slide.&lt;/p&gt;
+&lt;p&gt;Lean and Bella were at the playground. Bella climbs the slide first and slides down. Lean excitedly climbs up but doesn't wait for Bella to move away before going down. She bumps into Bella at the bottom and gets upset. “Move!” Yelled Lean as she moved pass Bella. Bella began to cry and said that Lean pushed her. Teacher reminds them to be nice to each other and take turns sliding. They hug, say sorry and go back to sliding and having fun. &lt;/p&gt;
+&lt;p&gt;Social/ Emotional skills used: &lt;/p&gt;
+&lt;p&gt;Taking turns- Lean and Bella were nice to each other and to turns sliding.&lt;/p&gt;
+&lt;p&gt;Bella showed that she was upset when Bella bumped into her. &lt;/p&gt;
+&lt;p&gt;Expressing feelings- saying sorry &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Social/ Emotional Skills children need support to learn:&lt;/p&gt;
+&lt;p&gt;Patience- Bella did not wait for Lean to move before sliding.&lt;/p&gt;
+&lt;p&gt;Awareness of safety- Bella needs to understand the importance of being safe. Bumping into someone could hurt them. &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Interaction #2. Playtime&lt;/p&gt;
+&lt;p&gt;Patrice and Shaun are playing with blocks. patrice builds a tower, while Shaun gathers blocks to make a house. Shaun notices that Patrice has many blocks and asks if he can have some. Patrice gives him a few. He takes them and start to build but realizes he needs more blocks. Instead of asking, Shaun grabs some from Patrice's pile. She gets upset and knocks his house over. She takes back her blocks and tell him to ask. Shaun sits in silence for a minute and then ask Patrice if he could have more blocks. &lt;/p&gt;
+&lt;p&gt;Social/ Emotional skills used:&lt;/p&gt;
+&lt;p&gt; Asking politely/ sharing resources- Shaun asks for the blocks and Patrice shared, showing generosity. &lt;/p&gt;
+&lt;p&gt;Communication- Shaun expressed his need for blocks. &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Social/ Emotional skills children need support to learn: &lt;/p&gt;
+&lt;p&gt;Respecting personal space and belongings- Shaun took more blocks without asking and upsets Patrice. &lt;/p&gt;
+&lt;p&gt;Managing Frustration/Emotions- Patrice reacts by knocking Shaun's house down instead of using her words. &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9759</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9758">
+        <userid>2125</userid>
+        <timecreated>1738679896</timecreated>
+        <timemodified>1741020567</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>draft</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9758</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;Social skills are the abilities that allow  people to interact  and communicate  with  each  others. &lt;/p&gt;
+&lt;p&gt;-verbal &lt;/p&gt;
+&lt;p&gt;-nonverbal &lt;/p&gt;
+&lt;p&gt;-facial&lt;/p&gt;
+&lt;p&gt;-expression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;body language&lt;/li&gt;
+&lt;li&gt;Eye contact &lt;/li&gt;
+&lt;li&gt;Respect &lt;/li&gt;
+&lt;li&gt;Leadership&lt;/li&gt;
+&lt;li&gt;Conflict resolution &lt;/li&gt;
+&lt;li&gt;Tone of voice &lt;/li&gt;
+&lt;li&gt;Empathy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;E Emotional skills had ability to bruce recognizer express and regulate your emotions.&lt;/p&gt;
+&lt;p&gt;Resolve Conflict &lt;/p&gt;
+&lt;p&gt;Have self control&lt;/p&gt;
+&lt;p&gt;Identify and manage their feeling&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Tamari Is a child that likes to  play and Sitting by himself. on my observation he don't like to Socialise. As his practitioner  I'm working with he.&lt;/p&gt;
+&lt;p&gt;1 we at the school playing  Tuck of war so he can learn  to take turn.&lt;/p&gt;
+&lt;p&gt;2 I put the children  in groups  so they can  learn to share.&lt;/p&gt;
+&lt;p&gt;3.i had he to take up circle&lt;/p&gt;
+&lt;p&gt;4 I had he to give the hand soap and tissue To learn to interrupt with each other.&lt;/p&gt;
+&lt;p&gt;I  still working with Tamari. now i observe that he's starting to talk louder and sit by a special girl in   the class.&lt;/p&gt;
+&lt;p&gt;           EMOTIONAL &lt;/p&gt;
+&lt;p&gt;Devin Is the child that like to fight  and use obscene  language.  If a child  touch him , he will fight. Devin like to use his hand a lot &lt;/p&gt;
+&lt;p&gt;We did the different feelings  and I have a chat with feelings. &lt;/p&gt;
+&lt;p&gt;I did speak  and say how you feel&lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9758</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9958">
+        <userid>2126</userid>
+        <timecreated>1740744643</timecreated>
+        <timemodified>1740744643</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9959">
+        <userid>2127</userid>
+        <timecreated>1740744643</timecreated>
+        <timemodified>1740744643</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9960">
+        <userid>2128</userid>
+        <timecreated>1740744643</timecreated>
+        <timemodified>1740744643</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9609">
+        <userid>2129</userid>
+        <timecreated>1737582940</timecreated>
+        <timemodified>1743124360</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9609</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9609</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9801">
+        <userid>2130</userid>
+        <timecreated>1738970989</timecreated>
+        <timemodified>1738976040</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>draft</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9801</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9801</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9961">
+        <userid>2131</userid>
+        <timecreated>1740744769</timecreated>
+        <timemodified>1740744769</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9789">
+        <userid>2132</userid>
+        <timecreated>1738798619</timecreated>
+        <timemodified>1738798619</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9962">
+        <userid>2133</userid>
+        <timecreated>1740744769</timecreated>
+        <timemodified>1741726082</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9962</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9962</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9763">
+        <userid>2134</userid>
+        <timecreated>1738766457</timecreated>
+        <timemodified>1739266345</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9763</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9763</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9963">
+        <userid>2135</userid>
+        <timecreated>1740744769</timecreated>
+        <timemodified>1740744769</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9673">
+        <userid>2137</userid>
+        <timecreated>1738189304</timecreated>
+        <timemodified>1738807231</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9673</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9673</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9788">
+        <userid>2138</userid>
+        <timecreated>1738797056</timecreated>
+        <timemodified>1738797056</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9798">
+        <userid>2139</userid>
+        <timecreated>1738897083</timecreated>
+        <timemodified>1738897083</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9964">
+        <userid>2140</userid>
+        <timecreated>1740744769</timecreated>
+        <timemodified>1741918340</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9964</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9964</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9965">
+        <userid>2141</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9966">
+        <userid>2142</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9967">
+        <userid>2143</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9793">
+        <userid>2144</userid>
+        <timecreated>1738868227</timecreated>
+        <timemodified>1739848172</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9793</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9793</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9731">
+        <userid>2145</userid>
+        <timecreated>1738603978</timecreated>
+        <timemodified>1739305593</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>1</numfiles>
+            <submission>9731</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext></onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9731</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9968">
+        <userid>2147</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9969">
+        <userid>2148</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9970">
+        <userid>2149</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9971">
+        <userid>2150</userid>
+        <timecreated>1740744912</timecreated>
+        <timemodified>1740744912</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9782">
+        <userid>2151</userid>
+        <timecreated>1738793230</timecreated>
+        <timemodified>1738793230</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9972">
+        <userid>2152</userid>
+        <timecreated>1740744991</timecreated>
+        <timemodified>1740744991</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9973">
+        <userid>2153</userid>
+        <timecreated>1740744991</timecreated>
+        <timemodified>1740744991</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9974">
+        <userid>2154</userid>
+        <timecreated>1740744991</timecreated>
+        <timemodified>1740744991</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9810">
+        <userid>2155</userid>
+        <timecreated>1739284569</timecreated>
+        <timemodified>1739284569</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>new</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+      <submission id="9783">
+        <userid>2398</userid>
+        <timecreated>1738793352</timecreated>
+        <timemodified>1741196081</timemodified>
+        <timestarted>$@NULL@$</timestarted>
+        <status>submitted</status>
+        <groupid>0</groupid>
+        <attemptnumber>0</attemptnumber>
+        <latest>1</latest>
+        <subplugin_assignsubmission_file_submission>
+          <submission_file>
+            <numfiles>0</numfiles>
+            <submission>9783</submission>
+          </submission_file>
+        </subplugin_assignsubmission_file_submission>
+        <subplugin_assignsubmission_onlinetext_submission>
+          <submission_onlinetext>
+            <onlinetext>&lt;p&gt;Children were sitted at the table three of them played together while the rest played on their own, one child asked the other whether she can have a block from his he indicated that she could. This one child played on her own not allowing anyone to touch or play with they block she had altogether, but had conversation insisted of sharing or using her blocks with the rest. This one child took his blocks and kept to himself after a while. One child did not want to include another into playing with the rest of them she kept on telling her no she can't play. One child saying he shared his toy with another Little girl. &lt;/p&gt;
+&lt;p&gt;Emotional skills noticed constructively express wide range of emotions. Develop the capacity to act through compassion and kindness. Communicate their need for assistance. &lt;/p&gt;
+&lt;p&gt;Skills needing support to learn expressing an onpion in matters that affect them. Express their fears openly and trust that their fears will be taken seriously.&lt;/p&gt;
+&lt;p&gt;Social skills, show interest in other children and in being part of a group. Be playful and respond to others, reaching out for company. &lt;/p&gt;
+&lt;p&gt;Skills needing support resolution through play and become aware of other ways that people are included on excluded from physical and social environment.&lt;/p&gt;</onlinetext>
+            <onlineformat>1</onlineformat>
+            <submission>9783</submission>
+          </submission_onlinetext>
+        </subplugin_assignsubmission_onlinetext_submission>
+      </submission>
+    </submissions>
+    <grades>
+    </grades>
+    <plugin_configs>
+      <plugin_config id="2055">
+        <plugin>onlinetext</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>enabled</name>
+        <value>1</value>
+      </plugin_config>
+      <plugin_config id="2056">
+        <plugin>file</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>enabled</name>
+        <value>1</value>
+      </plugin_config>
+      <plugin_config id="2057">
+        <plugin>file</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>maxfilesubmissions</name>
+        <value>5</value>
+      </plugin_config>
+      <plugin_config id="2058">
+        <plugin>file</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>maxsubmissionsizebytes</name>
+        <value>5242880</value>
+      </plugin_config>
+      <plugin_config id="2059">
+        <plugin>file</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>filetypeslist</name>
+        <value></value>
+      </plugin_config>
+      <plugin_config id="2060">
+        <plugin>comments</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>enabled</name>
+        <value>1</value>
+      </plugin_config>
+      <plugin_config id="2061">
+        <plugin>comments</plugin>
+        <subtype>assignfeedback</subtype>
+        <name>enabled</name>
+        <value>1</value>
+      </plugin_config>
+      <plugin_config id="2062">
+        <plugin>comments</plugin>
+        <subtype>assignfeedback</subtype>
+        <name>commentinline</name>
+        <value>0</value>
+      </plugin_config>
+      <plugin_config id="2063">
+        <plugin>editpdf</plugin>
+        <subtype>assignfeedback</subtype>
+        <name>enabled</name>
+        <value>0</value>
+      </plugin_config>
+      <plugin_config id="2064">
+        <plugin>offline</plugin>
+        <subtype>assignfeedback</subtype>
+        <name>enabled</name>
+        <value>0</value>
+      </plugin_config>
+      <plugin_config id="2066">
+        <plugin>onlinetext</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>wordlimit</name>
+        <value>0</value>
+      </plugin_config>
+      <plugin_config id="2067">
+        <plugin>onlinetext</plugin>
+        <subtype>assignsubmission</subtype>
+        <name>wordlimitenabled</name>
+        <value>0</value>
+      </plugin_config>
+    </plugin_configs>
+    <overrides>
+    </overrides>
+  </assign>
+</activity>
