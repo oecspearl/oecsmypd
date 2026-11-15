@@ -21,6 +21,8 @@ export interface ImportSummary {
   lessons: number;
   assignments: number;
   interactives: number;
+  quizzes: number;
+  questions: number;
   filesUploaded: number;
 }
 
@@ -69,6 +71,9 @@ function lessonContentBlocks(lesson: ImportedLesson): unknown[] {
   switch (lesson.kind) {
     case "interactive":
       return [{ type: "interactive", title: lesson.title, data: lesson.interactive }];
+    case "quiz":
+      // quizId is filled in after the quiz row is created.
+      return [{ type: "quiz", title: lesson.title, data: {} }];
     case "assignment":
       return [
         {
@@ -89,6 +94,7 @@ function lessonContentBlocks(lesson: ImportedLesson): unknown[] {
 function contentTypeFor(kind: ImportedLesson["kind"]): string {
   if (kind === "interactive") return "interactive";
   if (kind === "assignment") return "assignment";
+  if (kind === "quiz") return "quiz";
   return "rich_text";
 }
 
@@ -154,6 +160,8 @@ export async function importBackupToSupabase(
   let lessonCount = 0;
   let assignmentCount = 0;
   let interactiveCount = 0;
+  let quizCount = 0;
+  let questionCount = 0;
 
   for (const section of built.sections) {
     const { data: subject, error: subjErr } = await supabase
@@ -202,6 +210,50 @@ export async function importBackupToSupabase(
         if (aErr) throw new Error(`assignment insert failed: ${aErr.message}`);
         assignmentCount++;
       }
+
+      if (lesson.kind === "quiz" && lesson.quiz) {
+        const points = lesson.quiz.questions.reduce((sum, q) => sum + (q.points || 0), 0);
+        const { data: quizRow, error: qErr } = await supabase
+          .from("quizzes")
+          .insert({
+            course_id: courseId,
+            lesson_id: lessonRow.id,
+            title: lesson.quiz.title,
+            description: lesson.quiz.intro,
+            time_limit: lesson.quiz.timeLimitSeconds
+              ? Math.round(lesson.quiz.timeLimitSeconds / 60)
+              : null,
+            attempts_allowed: lesson.quiz.attempts || null,
+            points,
+            published: false,
+          })
+          .select("id")
+          .single();
+        if (qErr || !quizRow) throw new Error(`quiz insert failed: ${qErr?.message}`);
+
+        const questionRows = lesson.quiz.questions.map((q, i) => ({
+          quiz_id: quizRow.id,
+          type: q.type,
+          question_text: q.questionText,
+          points: q.points || 1,
+          order: i,
+          options: q.options,
+          correct_answer: q.correctAnswers,
+        }));
+        const { error: qqErr } = await supabase.from("questions").insert(questionRows);
+        if (qqErr) throw new Error(`questions insert failed: ${qqErr.message}`);
+
+        // Point the lesson's content block at the created quiz.
+        await supabase
+          .from("lessons")
+          .update({
+            content: [{ type: "quiz", title: lesson.title, data: { quizId: quizRow.id } }],
+          })
+          .eq("id", lessonRow.id);
+
+        quizCount++;
+        questionCount += questionRows.length;
+      }
     }
   }
 
@@ -211,6 +263,8 @@ export async function importBackupToSupabase(
     lessons: lessonCount,
     assignments: assignmentCount,
     interactives: interactiveCount,
+    quizzes: quizCount,
+    questions: questionCount,
     filesUploaded,
   };
 }

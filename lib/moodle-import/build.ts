@@ -24,8 +24,9 @@ import {
   convertInteractiveVideo,
   type MyPdInteractiveContent,
 } from "./h5p-converters";
+import { parseQuestionBank, parseQuiz, type MoodleQuiz } from "./quiz-parser";
 
-export type LessonKind = "page" | "assignment" | "interactive" | "generic";
+export type LessonKind = "page" | "assignment" | "interactive" | "quiz" | "generic";
 
 export interface ImportedLesson {
   moduleId: string;
@@ -38,6 +39,7 @@ export interface ImportedLesson {
   html?: string;
   assignment?: MoodleAssignment;
   interactive?: MyPdInteractiveContent;
+  quiz?: MoodleQuiz;
 }
 
 export interface ImportedSection {
@@ -119,6 +121,10 @@ export async function buildCourseFromArchive(
   const index = await parseBackupIndex(backupXml);
   const course = await parseCourse(courseXml);
 
+  // The question bank is a single root file shared by every quiz in the course.
+  const questionsXml = archive.readText("questions.xml");
+  const questionBank = questionsXml ? await parseQuestionBank(questionsXml) : new Map();
+
   // moduleId -> activity descriptor, for sequence lookups.
   const activityById = new Map(index.activities.map((a) => [a.moduleid, a]));
 
@@ -157,6 +163,9 @@ export async function buildCourseFromArchive(
           opts.resolveFileUrl
         );
         lessons.push({ ...base, title: assignment.title, kind: "assignment", assignment });
+      } else if (activity.modulename === "quiz") {
+        const quiz = await parseQuiz(activityXml, questionBank);
+        lessons.push({ ...base, title: quiz.title || activity.title, kind: "quiz", quiz });
       } else if (activity.modulename === "hvp") {
         const interactive = await parseHvp(activityXml, activity.title, opts);
         if (interactive) {
