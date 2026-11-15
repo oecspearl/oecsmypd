@@ -1,0 +1,394 @@
+[
+  {
+    "shortname": "CCIPAE",
+    "fullname": "Child Centered, Inclusive Practice - Amanda Edmead"
+  },
+  {
+    "shortname": "CCIPAGD",
+    "fullname": "Child Centered, Inclusive Practice - Aldia Gumbs-Dyer"
+  },
+  {
+    "shortname": "CCIPAHD",
+    "fullname": "Child Centered, Inclusive Practice - Ann Hamilton-Dopwell"
+  },
+  {
+    "shortname": "CCIPAR",
+    "fullname": "Child Centered, Inclusive Practice - Aberdine Roberts"
+  },
+  {
+    "shortname": "CCIPBTM",
+    "fullname": "Child Centered, Inclusive Practice - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "CCIPCR",
+    "fullname": "Child Centered, Inclusive Practice - Candia Robinson"
+  },
+  {
+    "shortname": "CCIPGM",
+    "fullname": "Child Centered, Inclusive Practice - Gilda Marcion"
+  },
+  {
+    "shortname": "CCIPJR",
+    "fullname": "Child Centered, Inclusive Practice - Janelle Ross"
+  },
+  {
+    "shortname": "CCIPJRa",
+    "fullname": "Child Centered, Inclusive Practice - Jennifer Raphael"
+  },
+  {
+    "shortname": "CCIPJWW",
+    "fullname": "Child Centered, Inclusive Practice - Jessel Williams-Walcott"
+  },
+  {
+    "shortname": "CCIPKAJ",
+    "fullname": "Child Centered, Inclusive Practice - Kathy Ann James"
+  },
+  {
+    "shortname": "CCIPKC",
+    "fullname": "Child Centered, Inclusive Practice - Karen Celestine"
+  },
+  {
+    "shortname": "CCIPKKS",
+    "fullname": "Child Centered, Inclusive Practice - Kendra King-Snagg"
+  },
+  {
+    "shortname": "CCIPKP",
+    "fullname": "Child Centered, Inclusive Practice - Keshawn Paul"
+  },
+  {
+    "shortname": "CCIPMHR",
+    "fullname": "Child Centered, Inclusive Practice - Michal Herry-Romney"
+  },
+  {
+    "shortname": "CCIPNF",
+    "fullname": "Child Centered, Inclusive Practice - Nichole Franklyn"
+  },
+  {
+    "shortname": "CCIPSB",
+    "fullname": "Child Centered, Inclusive Practice - Selma Biscette"
+  },
+  {
+    "shortname": "CCIPSBa",
+    "fullname": "Child Centered, Inclusive Practice - Shermine Bardouille"
+  },
+  {
+    "shortname": "CCIPSL",
+    "fullname": "Child Centered, Inclusive Practice - Susanne Lewis"
+  },
+  {
+    "shortname": "CCIPSMB",
+    "fullname": "Child Centered, Inclusive Practice - S. Marise Butler"
+  },
+  {
+    "shortname": "CCIPSM",
+    "fullname": "Child Centered, Inclusive Practice - Stacey Mascall"
+  },
+  {
+    "shortname": "CSSIKKS",
+    "fullname": "Continuous School and System Improvement - Kendra King-Snagg"
+  },
+  {
+    "shortname": "CSSISM",
+    "fullname": "Continuous School and System Improvement - Stacey Mascall"
+  },
+  {
+    "shortname": "CTAENF",
+    "fullname": "Collaborative Team Approaches to the Education of Students with SEN Building School and System Capacity "
+  },
+  {
+    "shortname": "DGMT01",
+    "fullname": "Digital Marketing 01"
+  },
+  {
+    "shortname": "EBPOT",
+    "fullname": "Evidence-Based Practices in Special Education and Inclusive Education"
+  },
+  {
+    "shortname": "EarlyRBC",
+    "fullname": "Early Readers Book Collection"
+  },
+  {
+    "shortname": "FOQEAGD",
+    "fullname": "Foundations of Quality Education - Aldia Gumbs Dyer"
+  },
+  {
+    "shortname": "FOQEAHD",
+    "fullname": "Foundations of Quality Education - Ann Hamilton-Dopwell"
+  },
+  {
+    "shortname": "FOQEAR",
+    "fullname": "Foundations of Quality Education - Aberdine Roberts"
+  },
+  {
+    "shortname": "FOQEBTM",
+    "fullname": "Foundations of Quality Education - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "FOQECR",
+    "fullname": "Foundations of Quality Education - Candia Robinson"
+  },
+  {
+    "shortname": "FOQEDS",
+    "fullname": "Introduction to Foundations of Quality Education"
+  },
+  {
+    "shortname": "FOQEGG",
+    "fullname": "Foundations of Quality Education - Giannetti George"
+  },
+  {
+    "shortname": "FOQEGM",
+    "fullname": "Foundations of Quality Education - Gilda Marcion"
+  },
+  {
+    "shortname": "FOQEJR",
+    "fullname": "Foundations of Quality Education - Janelle Ross"
+  },
+  {
+    "shortname": "FOQEJRa",
+    "fullname": "Foundations of Quality Education - Jennifer Raphael"
+  },
+  {
+    "shortname": "FOQEJWW",
+    "fullname": "Foundations of Quality Education - Jessel Williams-Walcott"
+  },
+  {
+    "shortname": "FOQEKAJ",
+    "fullname": "Foundations of Quality Education - Kathy Ann James"
+  },
+  {
+    "shortname": "FOQEKC",
+    "fullname": "Foundations of Quality Education - Karen Celestine"
+  },
+  {
+    "shortname": "FOQEKKS",
+    "fullname": "Foundations of Quality Education - Kendra King Snagg"
+  },
+  {
+    "shortname": "FOQEKP",
+    "fullname": "Foundations of Quality Education - Keshawn Paul"
+  },
+  {
+    "shortname": "FOQEMR",
+    "fullname": "Foundations of Quality Education - Michal Romney"
+  },
+  {
+    "shortname": "FOQENF",
+    "fullname": "Foundations of Quality Education - Nichole Franklyn"
+  },
+  {
+    "shortname": "FOQESBA",
+    "fullname": "Foundations of Quality Education - Shermine Bardouille"
+  },
+  {
+    "shortname": "FOQESB",
+    "fullname": "Foundations of Quality Education - Selma Biscette"
+  },
+  {
+    "shortname": "FOQESL",
+    "fullname": "Foundations of Quality Education - Susanne Lewis"
+  },
+  {
+    "shortname": "FOQESMB",
+    "fullname": "Foundations of Quality Education - S. Marise Butler"
+  },
+  {
+    "shortname": "FOQESPM",
+    "fullname": "Foundations of Quality Education - Stacey Payne Mascall"
+  },
+  {
+    "shortname": "GIS101",
+    "fullname": "Geographic Information Systems for the OECS"
+  },
+  {
+    "shortname": "IFSG00",
+    "fullname": "Innovation for Success: A Guide for Entrepreneurs"
+  },
+  {
+    "shortname": "KCP001",
+    "fullname": "Module 25: Preparing for the Pilot of the OECS Kindergarten Curriculum"
+  },
+  {
+    "shortname": "LTPBTM",
+    "fullname": "Learning Through Play - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "LTPEW",
+    "fullname": "Learning Through Play - Ethny Williams"
+  },
+  {
+    "shortname": "LTPVG",
+    "fullname": "Learning Through Play - Veda George"
+  },
+  {
+    "shortname": "LTPZL",
+    "fullname": "Learning Through Play - Zephirina Lansiquot"
+  },
+  {
+    "shortname": "M04LTCA",
+    "fullname": "Module 4: Learning Through the Creative Arts"
+  },
+  {
+    "shortname": "MPD001",
+    "fullname": "Your Learning Journey: MyPD Orientation"
+  },
+  {
+    "shortname": "OHDBTM",
+    "fullname": "Optimizing the Holistic Development  of 3-4 Year Old Children - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "OHDEW",
+    "fullname": "Optimizing the Holistic Development  of 3-4 Year Old Children - Ethny Williams"
+  },
+  {
+    "shortname": "OHDVD",
+    "fullname": "Optimizing the Holistic Development  of 3-4 Year Old Children - Veda George"
+  },
+  {
+    "shortname": "OHDZL",
+    "fullname": "Optimizing the Holistic Development  of 3-4 Year Old Children - Zephirina Lansiquot"
+  },
+  {
+    "shortname": "ORHPGIS24",
+    "fullname": "ORHP GIS Capacity Building - 2024"
+  },
+  {
+    "shortname": "PD001",
+    "fullname": "Preparing for Creative Arts Instruction in the Primary School Curriculum"
+  },
+  {
+    "shortname": "PD002",
+    "fullname": "My Learning Journey"
+  },
+  {
+    "shortname": "PDFacilitate",
+    "fullname": "Professional Development Facilitators"
+  },
+  {
+    "shortname": "QLKKS",
+    "fullname": "Quality Leadership: Leading Educational Change through CSSI - Kendra King-Snagg"
+  },
+  {
+    "shortname": "QLMT01",
+    "fullname": "Quality Management 01"
+  },
+  {
+    "shortname": "QLSM",
+    "fullname": "Quality Leadership: Leading Educational Change through CSSI - Stacey Mascall"
+  },
+  {
+    "shortname": "SEN18",
+    "fullname": "Inclusive Practice for Students with SEN: Implementing Increased Capacity for SEN and Inclusive Education "
+  },
+  {
+    "shortname": "SMED01",
+    "fullname": "Small and Medium Enterprise Development 01"
+  },
+  {
+    "shortname": "SQLAGD",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Aldia Gumbs-Dyer"
+  },
+  {
+    "shortname": "SQLAHD",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Ann Hamilton-Dopwell"
+  },
+  {
+    "shortname": "SQLAR",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Aberdine Roberts"
+  },
+  {
+    "shortname": "SQLBTM",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "SQLCR",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Candia Robinson"
+  },
+  {
+    "shortname": "SQLGG",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Giannetti George"
+  },
+  {
+    "shortname": "SQLGM",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Gilda Marcion"
+  },
+  {
+    "shortname": "SQLJR",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Janelle Ross"
+  },
+  {
+    "shortname": "SQLJRa",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Jennifer Raphael"
+  },
+  {
+    "shortname": "SQLJWW",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Jessel Williams-Walcott"
+  },
+  {
+    "shortname": "SQLKAJ",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Kathy Ann James"
+  },
+  {
+    "shortname": "SQLKC",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Karen Celestine"
+  },
+  {
+    "shortname": "SQLKKS",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Kendra King-Snagg"
+  },
+  {
+    "shortname": "SQLKP",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Keshawn Paul"
+  },
+  {
+    "shortname": "SQLMR",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Michal Romney"
+  },
+  {
+    "shortname": "SQLNF",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Nichole Franklyn"
+  },
+  {
+    "shortname": "SQLSB",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Selma Biscette"
+  },
+  {
+    "shortname": "SQLSBa",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Shermine Bardouille"
+  },
+  {
+    "shortname": "SQLSL",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Susanne Lewis"
+  },
+  {
+    "shortname": "SQLSMB",
+    "fullname": "Supporting Quality Learning Through the New OHPC - S. Marise Butler"
+  },
+  {
+    "shortname": "SQLSM",
+    "fullname": "Supporting Quality Learning Through the New OHPC - Stacey Mascall"
+  },
+  {
+    "shortname": "SSEBTM",
+    "fullname": "Supporting Social and Emotional Well-being in Young Children - Bellana Thompson-Morain"
+  },
+  {
+    "shortname": "SSEEW",
+    "fullname": "Supporting Social and Emotional Well-being in Young Children - Ethny Williams"
+  },
+  {
+    "shortname": "SSEVG",
+    "fullname": "Supporting Social and Emotional Well-being in Young Children - Veda George"
+  },
+  {
+    "shortname": "SSEZL",
+    "fullname": "Supporting Social and Emotional Well-being in Young Children - Zephirina Lansiquot"
+  },
+  {
+    "shortname": "msd100",
+    "fullname": "MERL PD | Module 1"
+  },
+  {
+    "shortname": "msd200",
+    "fullname": "MERL PD | Module 2"
+  }
+]
