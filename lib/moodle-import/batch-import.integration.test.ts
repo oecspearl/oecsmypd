@@ -64,6 +64,20 @@ suite("dedup: import a topic group into one course + classes", () => {
         .select("*", { count: "exact", head: true })
         .eq("course_id", result.courseId);
       expect(enrollCount).toBeGreaterThan(0);
+
+      // Final grades: one "Final Grade" column, with per-learner grades.
+      const { count: itemCount } = await supabase
+        .from("course_grade_items")
+        .select("*", { count: "exact", head: true })
+        .eq("course_id", result.courseId);
+      expect(itemCount).toBe(1);
+
+      const { count: gradeCount } = await supabase
+        .from("course_grades")
+        .select("*", { count: "exact", head: true })
+        .eq("course_id", result.courseId);
+      expect(gradeCount).toBeGreaterThan(10);
+      expect(result.classes.reduce((n, c) => n + c.grades, 0)).toBe(gradeCount);
     },
     180000
   );

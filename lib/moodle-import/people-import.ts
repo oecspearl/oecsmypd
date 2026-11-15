@@ -11,6 +11,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { randomUUID } from "node:crypto";
 import type { EnrolledUser } from "./people-parser";
+import type { FinalGrade } from "./grade-parser";
 
 export interface PeopleSummary {
   usersCreated: number;
@@ -19,13 +20,22 @@ export interface PeopleSummary {
   classesCreated: number;
   enrollments: number;
   instructors: number;
+  grades: number;
+}
+
+export interface PeopleOptions {
+  /** Course-level final grades by Moodle user id, for this backup's class. */
+  finalGrades?: Map<string, FinalGrade>;
+  /** The course's "Final Grade" grade item to attach grades to. */
+  gradeItemId?: string;
 }
 
 export async function importPeopleForCourse(
   supabase: SupabaseClient,
   courseId: string,
   className: string,
-  people: EnrolledUser[]
+  people: EnrolledUser[],
+  opts: PeopleOptions = {}
 ): Promise<PeopleSummary> {
   const idByEmail = new Map<string, string>();
   let usersCreated = 0;
@@ -120,5 +130,46 @@ export async function importPeopleForCourse(
     }
   }
 
-  return { usersCreated, usersExisting, skippedNoEmail, classesCreated: 1, enrollments, instructors };
+  // 4. Course-level final grades (one "Final Grade" column), mapped from
+  //    Moodle user id -> this class's account.
+  let grades = 0;
+  if (opts.finalGrades && opts.finalGrades.size > 0 && opts.gradeItemId) {
+    const userByMoodle = new Map<string, string>();
+    for (const p of people) {
+      const uid = p.email ? idByEmail.get(p.email) : undefined;
+      if (uid) userByMoodle.set(p.moodleId, uid);
+    }
+    for (const [moodleId, g] of opts.finalGrades) {
+      const uid = userByMoodle.get(moodleId);
+      if (!uid) continue;
+      const { data: ex } = await supabase
+        .from("course_grades")
+        .select("id")
+        .eq("course_id", courseId)
+        .eq("student_id", uid)
+        .eq("grade_item_id", opts.gradeItemId)
+        .maybeSingle();
+      if (ex) continue;
+      const percentage = g.gradeMax > 0 ? Math.round((g.finalGrade / g.gradeMax) * 10000) / 100 : 0;
+      await supabase.from("course_grades").insert({
+        course_id: courseId,
+        student_id: uid,
+        grade_item_id: opts.gradeItemId,
+        score: Math.round(g.finalGrade),
+        max_score: Math.round(g.gradeMax),
+        percentage,
+      });
+      grades++;
+    }
+  }
+
+  return {
+    usersCreated,
+    usersExisting,
+    skippedNoEmail,
+    classesCreated: 1,
+    enrollments,
+    instructors,
+    grades,
+  };
 }

@@ -11,6 +11,7 @@ import type { CourseGroup } from "./course-grouping";
 import { importBackupToSupabase } from "./persist";
 import { parseEnrolledUsers } from "./people-parser";
 import { importPeopleForCourse } from "./people-import";
+import { parseFinalGrades } from "./grade-parser";
 
 export interface ClassImportResult {
   facilitator: string;
@@ -18,6 +19,7 @@ export interface ClassImportResult {
   usersExisting: number;
   enrollments: number;
   instructors: number;
+  grades: number;
 }
 
 export interface GroupImportResult {
@@ -41,13 +43,40 @@ export async function importCourseGroup(
   await supabase.from("courses").update({ title: group.topic }).eq("id", courseId);
 
   const classes: ClassImportResult[] = [];
+  let gradeItemId: string | undefined;
+
   for (const backup of group.backups) {
-    const people = await parseEnrolledUsers(loadArchive(backup.shortname));
+    const archive = loadArchive(backup.shortname);
+    const people = await parseEnrolledUsers(archive);
+    const gb = archive.readText("gradebook.xml");
+    const finalGrades = gb ? parseFinalGrades(gb) : new Map();
+
+    // Create the course's single "Final Grade" column the first time a
+    // facilitator's copy actually has grades.
+    if (finalGrades.size > 0 && !gradeItemId) {
+      const gradeMax = [...finalGrades.values()][0].gradeMax;
+      const { data: gi, error: giErr } = await supabase
+        .from("course_grade_items")
+        .insert({
+          course_id: courseId,
+          title: "Final Grade",
+          type: "other",
+          category: "Final Grade",
+          points: Math.round(gradeMax) || 100,
+          is_active: true,
+        })
+        .select("id")
+        .single();
+      if (giErr) throw new Error(`grade item insert failed: ${giErr.message}`);
+      gradeItemId = gi?.id as string | undefined;
+    }
+
     const summary = await importPeopleForCourse(
       supabase,
       courseId,
       backup.facilitator || backup.shortname,
-      people
+      people,
+      { finalGrades, gradeItemId }
     );
     classes.push({
       facilitator: backup.facilitator,
@@ -55,6 +84,7 @@ export async function importCourseGroup(
       usersExisting: summary.usersExisting,
       enrollments: summary.enrollments,
       instructors: summary.instructors,
+      grades: summary.grades,
     });
   }
 
