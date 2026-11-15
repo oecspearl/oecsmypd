@@ -28,6 +28,23 @@ suite("SQLJR import into staging", () => {
       expect(summary.quizzes).toBe(1);
       expect(summary.questions).toBe(5);
 
+      // Folder materials are listed as file blocks even though most of the
+      // actual files were lost in the Moodle crash — they're marked unavailable
+      // and captured in the missing-files inventory for facilitator re-upload.
+      const { data: allLessons } = await supabase
+        .from("lessons")
+        .select("content")
+        .eq("course_id", summary.courseId);
+      const fileBlocks = (allLessons ?? [])
+        .flatMap((l) => (l.content as any[]) ?? [])
+        .filter((b) => b?.type === "file");
+      expect(fileBlocks.length).toBeGreaterThan(40); // 52 folder files preserved as entries
+      // Lost files are flagged, not rendered as broken links.
+      expect(fileBlocks.some((b) => b.data?.available === false)).toBe(true);
+      // The inventory records what needs re-uploading.
+      expect(summary.missingFiles.length).toBeGreaterThan(40);
+      console.log(`SQLJR: ${summary.filesUploaded} files recovered, ${summary.missingFiles.length} missing`);
+
       // The quiz landed as a real row.
       const { data: quizzes } = await supabase
         .from("quizzes")

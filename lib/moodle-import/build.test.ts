@@ -6,6 +6,9 @@ import { buildCourseFromArchive } from "./build";
 const archive = new MoodleArchive(
   readFileSync(new URL("./__fixtures__/ssezl.mbz", import.meta.url))
 );
+const sqljr = new MoodleArchive(
+  readFileSync(new URL("./__fixtures__/sqljr.mbz", import.meta.url))
+);
 const resolveFileUrl = (p: string) => `https://cdn.test/${p}`;
 
 describe("buildCourseFromArchive", () => {
@@ -47,5 +50,23 @@ describe("buildCourseFromArchive", () => {
       expect(lesson.moduleId).toMatch(/^\d+$/);
       expect(typeof lesson.order).toBe("number");
     }
+  });
+
+  test("extracts folder file collections from SQLJR", async () => {
+    const course = await buildCourseFromArchive(sqljr, { resolveFileUrl });
+    const folders = course.sections
+      .flatMap((s) => s.lessons)
+      .filter((l) => l.kind === "folder");
+
+    // All eight folders, 52 content files in total.
+    expect(folders).toHaveLength(8);
+    const totalFiles = folders.reduce((n, f) => n + (f.files?.length ?? 0), 0);
+    expect(totalFiles).toBe(52);
+
+    // The "Resources" folder carries its 8 files, each with a resolved URL.
+    const resources = folders.find((f) => f.title === "Resources");
+    expect(resources?.files).toHaveLength(8);
+    expect(resources?.files?.some((f) => f.name.endsWith(".xlsx"))).toBe(true);
+    expect(resources?.files?.[0].url).toContain("https://cdn.test/");
   });
 });

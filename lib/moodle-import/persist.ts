@@ -24,6 +24,9 @@ export interface ImportSummary {
   quizzes: number;
   questions: number;
   filesUploaded: number;
+  /** Files referenced by the course but absent from the backup (lost in the
+   *  Moodle crash). Names for the facilitator re-upload inventory. */
+  missingFiles: string[];
 }
 
 interface FileEntry {
@@ -74,6 +77,29 @@ function lessonContentBlocks(lesson: ImportedLesson): unknown[] {
     case "quiz":
       // quizId is filled in after the quiz row is created.
       return [{ type: "quiz", title: lesson.title, data: {} }];
+    case "folder": {
+      const blocks: unknown[] = [];
+      if (lesson.html) {
+        blocks.push({ type: "text", title: lesson.title, data: { html: lesson.html } });
+      }
+      for (const f of lesson.files ?? []) {
+        blocks.push({
+          type: "file",
+          title: f.name,
+          data: {
+            name: f.name,
+            url: f.url || null,
+            type: f.type,
+            size: f.size,
+            // Lost in the crash — kept as a placeholder for re-upload.
+            available: !!f.url,
+          },
+        });
+      }
+      return blocks.length
+        ? blocks
+        : [{ type: "text", title: lesson.title, data: { html: lesson.html ?? "" } }];
+    }
     case "assignment":
       return [
         {
@@ -136,25 +162,35 @@ export async function importBackupToSupabase(
   const filesXml = archive.readText("files.xml") ?? "";
   const fileMap = parseFilesXml(filesXml);
   const urlMap = new Map<string, string>();
+  const missing = new Set<string>();
   let filesUploaded = 0;
 
   for (const ref of requested) {
     const entry = fileMap.get(basename(ref));
-    if (!entry) continue;
-    const blob = archive.readBuffer(`files/${entry.contenthash.slice(0, 2)}/${entry.contenthash}`);
-    if (!blob) continue;
+    const blob = entry
+      ? archive.readBuffer(`files/${entry.contenthash.slice(0, 2)}/${entry.contenthash}`)
+      : null;
+    // Referenced but absent from the backup (lost in the crash).
+    if (!entry || !blob) {
+      missing.add(basename(ref));
+      continue;
+    }
     const key = storageKey(courseId, entry.contenthash, basename(ref));
     const { error: upErr } = await supabase.storage
       .from(BUCKET)
       .upload(key, blob, { contentType: entry.mimetype, upsert: true });
-    if (upErr) continue;
+    if (upErr) {
+      missing.add(basename(ref));
+      continue;
+    }
     const { data: pub } = supabase.storage.from(BUCKET).getPublicUrl(key);
     urlMap.set(ref, pub.publicUrl);
     filesUploaded++;
   }
 
-  // 3. Rebuild the course with real URLs.
-  const built = await buildOnce((ref) => urlMap.get(ref) ?? ref);
+  // 3. Rebuild the course with real URLs. Missing files resolve to "" so they
+  //    render as unavailable rather than as broken filename links.
+  const built = await buildOnce((ref) => urlMap.get(ref) ?? "");
 
   // 4. Insert subjects → lessons (+ assignments).
   let lessonCount = 0;
@@ -266,5 +302,6 @@ export async function importBackupToSupabase(
     quizzes: quizCount,
     questions: questionCount,
     filesUploaded,
+    missingFiles: [...missing].sort(),
   };
 }

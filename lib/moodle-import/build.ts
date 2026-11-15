@@ -26,7 +26,14 @@ import {
 } from "./h5p-converters";
 import { parseQuestionBank, parseQuiz, type MoodleQuiz } from "./quiz-parser";
 
-export type LessonKind = "page" | "assignment" | "interactive" | "quiz" | "generic";
+export type LessonKind = "page" | "assignment" | "interactive" | "quiz" | "folder" | "generic";
+
+export interface LessonFile {
+  name: string;
+  url: string;
+  type: string;
+  size: number;
+}
 
 export interface ImportedLesson {
   moduleId: string;
@@ -40,6 +47,33 @@ export interface ImportedLesson {
   assignment?: MoodleAssignment;
   interactive?: MyPdInteractiveContent;
   quiz?: MoodleQuiz;
+  /** Downloadable files for folder lessons. */
+  files?: LessonFile[];
+}
+
+interface FolderFileMeta {
+  name: string;
+  mimetype: string;
+  size: number;
+}
+
+/** Index mod_folder content files from files.xml by their folder's contextid. */
+function parseFolderFiles(filesXml: string): Map<string, FolderFileMeta[]> {
+  const map = new Map<string, FolderFileMeta[]>();
+  for (const block of filesXml.match(/<file id="\d+">[\s\S]*?<\/file>/g) ?? []) {
+    if (!/<component>mod_folder<\/component>/.test(block)) continue;
+    if (!/<filearea>content<\/filearea>/.test(block)) continue;
+    const name = /<filename>([\s\S]*?)<\/filename>/.exec(block)?.[1]?.trim();
+    if (!name || name === ".") continue;
+    const ctx = /<contextid>([\s\S]*?)<\/contextid>/.exec(block)?.[1]?.trim() ?? "";
+    const mimetype =
+      /<mimetype>([\s\S]*?)<\/mimetype>/.exec(block)?.[1]?.trim() || "application/octet-stream";
+    const size = Number(/<filesize>([\s\S]*?)<\/filesize>/.exec(block)?.[1] ?? "0");
+    const arr = map.get(ctx) ?? [];
+    arr.push({ name, mimetype, size });
+    map.set(ctx, arr);
+  }
+  return map;
 }
 
 export interface ImportedSection {
@@ -77,6 +111,29 @@ async function parseGeneric(
   return {
     title: text(inner, "name"),
     html: rewritePluginFileRefs(text(inner, "intro"), opts.resolveFileUrl),
+  };
+}
+
+/** Parse a folder activity into its intro + downloadable file list. */
+async function parseFolder(
+  xml: string,
+  folderFiles: Map<string, FolderFileMeta[]>,
+  opts: FileResolver
+): Promise<{ title: string; intro: string; files: LessonFile[] }> {
+  const parsed = await parseStringPromise(xml);
+  const activity = parsed?.activity ?? {};
+  const contextid = String(activity.$?.contextid ?? "");
+  const folder = activity.folder?.[0] ?? {};
+  const files: LessonFile[] = (folderFiles.get(contextid) ?? []).map((f) => ({
+    name: f.name,
+    url: opts.resolveFileUrl(f.name),
+    type: f.name.split(".").pop()?.toLowerCase() ?? "",
+    size: f.size,
+  }));
+  return {
+    title: text(folder, "name"),
+    intro: rewritePluginFileRefs(text(folder, "intro"), opts.resolveFileUrl),
+    files,
   };
 }
 
@@ -125,6 +182,10 @@ export async function buildCourseFromArchive(
   const questionsXml = archive.readText("questions.xml");
   const questionBank = questionsXml ? await parseQuestionBank(questionsXml) : new Map();
 
+  // Folder content files, indexed by folder contextid.
+  const filesXml = archive.readText("files.xml");
+  const folderFiles = filesXml ? parseFolderFiles(filesXml) : new Map<string, FolderFileMeta[]>();
+
   // moduleId -> activity descriptor, for sequence lookups.
   const activityById = new Map(index.activities.map((a) => [a.moduleid, a]));
 
@@ -166,6 +227,15 @@ export async function buildCourseFromArchive(
       } else if (activity.modulename === "quiz") {
         const quiz = await parseQuiz(activityXml, questionBank);
         lessons.push({ ...base, title: quiz.title || activity.title, kind: "quiz", quiz });
+      } else if (activity.modulename === "folder") {
+        const folder = await parseFolder(activityXml, folderFiles, opts);
+        lessons.push({
+          ...base,
+          title: folder.title || activity.title,
+          kind: "folder",
+          html: folder.intro,
+          files: folder.files,
+        });
       } else if (activity.modulename === "hvp") {
         const interactive = await parseHvp(activityXml, activity.title, opts);
         if (interactive) {
