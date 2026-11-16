@@ -116,14 +116,18 @@ export async function importPeopleForCourse(
         .eq("student_id", uid)
         .maybeSingle();
       if (!ex) {
+        // Historical learners: 'active' so they appear in the app's views
+        // (gradebook, roster — all filter status='active'), with completion
+        // recorded via completed_at + 100% progress. Not re-certified.
         await supabase.from("enrollments").insert({
           course_id: courseId,
           class_id: classId,
           student_id: uid,
-          status: "completed",
+          status: "active",
           enrolled_at: now,
           updated_at: now,
           completed_at: now,
+          progress_percentage: 100,
         });
         enrollments++;
       }

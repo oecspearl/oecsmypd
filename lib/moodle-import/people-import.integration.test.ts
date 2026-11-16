@@ -54,7 +54,7 @@ suite("people migration into staging", () => {
         .from("enrollments")
         .select("*", { count: "exact", head: true })
         .eq("course_id", course!.id)
-        .eq("status", "completed");
+        .eq("status", "active");
       expect(enrollCount).toBe(summary.enrollments);
 
       const { count: instrCount } = await supabase
