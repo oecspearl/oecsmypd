@@ -185,20 +185,20 @@ async function remapLinks(
   return remapped;
 }
 
-export async function importCourseGroup(
+/**
+ * Import the people, grades, conferences and forum threads of a topic group
+ * into an EXISTING course, without creating or altering course content. Used
+ * both by importCourseGroup (after it builds content) and to merge Moodle
+ * history into a course that already exists in MyPD.
+ */
+export async function importGroupIntoCourse(
   supabase: SupabaseClient,
+  courseId: string,
   group: CourseGroup,
-  loadArchive: (shortname: string) => MoodleArchive
-): Promise<GroupImportResult> {
-  // Content once, from the first facilitator's copy (copies share a syllabus).
+  loadArchive: (shortname: string) => MoodleArchive,
+  repArchive: MoodleArchive = loadArchive(group.backups[0].shortname)
+): Promise<Omit<GroupImportResult, "topic" | "courseId" | "linksRemapped">> {
   const rep = group.backups[0];
-  const repArchive = loadArchive(rep.shortname);
-  const content = await importBackupToSupabase(repArchive, supabase);
-  const courseId = content.courseId;
-
-  // The course is the shared topic — not "<topic> - <facilitator>", which is
-  // the representative copy's name. The facilitator lives on the class.
-  await supabase.from("courses").update({ title: group.topic }).eq("id", courseId);
 
   // Synchronous sessions (no author dependency).
   const conferences = await importConferences(supabase, courseId, repArchive);
@@ -255,16 +255,36 @@ export async function importCourseGroup(
   // Forum threads (authors resolved via the representative copy's people).
   const forum = await importForums(supabase, courseId, repArchive, repPeople);
 
+  return { classes, conferences, discussions: forum.discussions, replies: forum.replies };
+}
+
+export async function importCourseGroup(
+  supabase: SupabaseClient,
+  group: CourseGroup,
+  loadArchive: (shortname: string) => MoodleArchive
+): Promise<GroupImportResult> {
+  // Content once, from the first facilitator's copy (copies share a syllabus).
+  const rep = group.backups[0];
+  const repArchive = loadArchive(rep.shortname);
+  const content = await importBackupToSupabase(repArchive, supabase);
+  const courseId = content.courseId;
+
+  // The course is the shared topic — not "<topic> - <facilitator>", which is
+  // the representative copy's name. The facilitator lives on the class.
+  await supabase.from("courses").update({ title: group.topic }).eq("id", courseId);
+
+  const data = await importGroupIntoCourse(supabase, courseId, group, loadArchive, repArchive);
+
   // Now that lessons + conferences exist, repoint dead Moodle links at MyPD.
   const linksRemapped = await remapLinks(supabase, courseId, repArchive);
 
   return {
     topic: group.topic,
     courseId,
-    classes,
-    conferences,
-    discussions: forum.discussions,
-    replies: forum.replies,
+    classes: data.classes,
+    conferences: data.conferences,
+    discussions: data.discussions,
+    replies: data.replies,
     linksRemapped,
   };
 }
