@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section id="721">
+  <number>0</number>
+  <name>Welcome</name>
+  <summary>&lt;p&gt;&lt;img class="img-fluid" role="presentation" src="@@PLUGINFILE@@/Module%2013%20Banner.png" alt="" width="1200" height="300"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="Module 13 Overview" src="$@HVPEMBEDBYID*2334@$" width="861" height="517" frameborder="0" allowfullscreen="allowfullscreen"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;script src="https://new-moodle.oecs.org/mod/hvp/library/js/h5p-resizer.js" charset="UTF-8"&gt;&lt;/script&gt;</summary>
+  <summaryformat>1</summaryformat>
+  <sequence>2334</sequence>
+  <visible>1</visible>
+  <availabilityjson>$@NULL@$</availabilityjson>
+  <component>$@NULL@$</component>
+  <itemid>$@NULL@$</itemid>
+  <timemodified>1736299690</timemodified>
+</section>

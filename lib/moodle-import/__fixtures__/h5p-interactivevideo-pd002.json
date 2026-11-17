@@ -1,0 +1,224 @@
+{
+  "machine_name": "H5P.InteractiveVideo",
+  "name": "Exploring a MyPD Course Page",
+  "content": {
+    "interactiveVideo": {
+      "video": {
+        "startScreenOptions": {
+          "title": "Exploring a MyPD Course Page",
+          "hideStartTitle": false
+        },
+        "textTracks": {
+          "videoTrack": [
+            {
+              "label": "Subtitles",
+              "kind": "subtitles",
+              "srcLang": "en"
+            }
+          ]
+        },
+        "files": [
+          {
+            "path": "videos/video-sA8lodCV.mp4",
+            "mime": "video/mp4",
+            "copyright": {
+              "license": "U"
+            }
+          }
+        ]
+      },
+      "assets": {
+        "interactions": [
+          {
+            "x": 2.1834061135371177,
+            "y": 23.28966521106259,
+            "width": 36.24454148471616,
+            "height": 15.982532751091703,
+            "duration": {
+              "from": 77,
+              "to": 79
+            },
+            "libraryTitle": "Single Choice Set",
+            "action": {
+              "library": "H5P.SingleChoiceSet 1.11",
+              "params": {
+                "choices": [
+                  {
+                    "subContentId": "5d63fdc9-11a2-40e2-a7a4-bb169b2fde5c",
+                    "answers": [
+                      "<p>I am confident in my ability to navigate a MyPD course page after viewing this resource.</p>\n",
+                      "<p>I am not confident in my ability to navigate a MyPD course page after viewing this resource.</p>\n"
+                    ],
+                    "question": "<p>Choose the statement which you believe to be true about you.</p>\n"
+                  }
+                ],
+                "overallFeedback": [
+                  {
+                    "from": 0,
+                    "to": 100
+                  }
+                ],
+                "behaviour": {
+                  "autoContinue": true,
+                  "timeoutCorrect": 2000,
+                  "timeoutWrong": 3000,
+                  "soundEffectsEnabled": true,
+                  "enableRetry": true,
+                  "enableSolutionsButton": true,
+                  "passPercentage": 100
+                },
+                "l10n": {
+                  "nextButtonLabel": "Next question",
+                  "showSolutionButtonLabel": "Show solution",
+                  "retryButtonLabel": "Retry",
+                  "solutionViewTitle": "Solution list",
+                  "correctText": "Correct!",
+                  "incorrectText": "Incorrect!",
+                  "shouldSelect": "Should have been selected",
+                  "shouldNotSelect": "Should not have been selected",
+                  "muteButtonLabel": "Mute feedback sound",
+                  "closeButtonLabel": "Close",
+                  "slideOfTotal": "Slide :num of :total",
+                  "scoreBarLabel": "You got :num out of :total points",
+                  "solutionListQuestionNumber": "Question :num",
+                  "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                  "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                }
+              },
+              "subContentId": "bada17c6-8f24-4eaf-9490-4e6e5f5b2157",
+              "metadata": {
+                "contentType": "Single Choice Set",
+                "license": "U",
+                "title": "Untitled Single Choice Set",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "Untitled Single Choice Set"
+              }
+            },
+            "pause": true,
+            "displayType": "poster",
+            "buttonOnMobile": false,
+            "adaptivity": {
+              "correct": {
+                "allowOptOut": false,
+                "message": "<p>With your new found confidence let's keep moving forward onto a new stepping stone.</p>\n"
+              },
+              "wrong": {
+                "allowOptOut": true,
+                "message": "<p>If you are not confident in your ability to perform as demonstrated, you should review the video.</p>\n",
+                "seekTo": 0,
+                "seekLabel": "Review"
+              },
+              "requireCompletion": false
+            },
+            "label": ""
+          }
+        ],
+        "bookmarks": [],
+        "endscreens": [
+          {
+            "time": 79.505102,
+            "label": "1:19 Submit screen"
+          }
+        ]
+      },
+      "summary": {
+        "task": {
+          "library": "H5P.Summary 1.10",
+          "params": {
+            "intro": "<p>Pick the statement which you believe to be correct.</p>\n",
+            "overallFeedback": [
+              {
+                "from": 0,
+                "to": 100
+              }
+            ],
+            "solvedLabel": "Progress:",
+            "scoreLabel": "Wrong answers:",
+            "resultLabel": "Your result",
+            "labelCorrect": "Correct.",
+            "labelIncorrect": "Incorrect! Please try again.",
+            "alternativeIncorrectLabel": "Incorrect",
+            "labelCorrectAnswers": "Correct answers.",
+            "tipButtonLabel": "Show tip",
+            "scoreBarLabel": "You got :num out of :total points",
+            "progressText": "Progress :num of :total",
+            "summaries": [
+              {
+                "subContentId": "9e160576-41e9-4586-b81f-4639ae554c5f",
+                "tip": ""
+              }
+            ]
+          },
+          "subContentId": "36f4e54c-8a57-4747-bc31-eb74a269354b",
+          "metadata": {
+            "contentType": "Summary",
+            "license": "U",
+            "title": "Untitled Summary",
+            "authors": [],
+            "changes": [],
+            "extraTitle": "Untitled Summary"
+          }
+        },
+        "displayAt": 3
+      }
+    },
+    "override": {
+      "autoplay": false,
+      "loop": false,
+      "showBookmarksmenuOnLoad": false,
+      "showRewind10": false,
+      "preventSkippingMode": "none",
+      "deactivateSound": false
+    },
+    "l10n": {
+      "interaction": "Interaction",
+      "play": "Play",
+      "pause": "Pause",
+      "mute": "Mute, currently unmuted",
+      "unmute": "Unmute, currently muted",
+      "quality": "Video Quality",
+      "captions": "Captions",
+      "close": "Close",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit Fullscreen",
+      "summary": "Open summary dialog",
+      "bookmarks": "Bookmarks",
+      "endscreen": "Submit screen",
+      "defaultAdaptivitySeekLabel": "Continue",
+      "continueWithVideo": "Continue with video",
+      "more": "More player options",
+      "playbackRate": "Playback Rate",
+      "rewind10": "Rewind 10 Seconds",
+      "navDisabled": "Navigation is disabled",
+      "navForwardDisabled": "Navigating forward is disabled",
+      "sndDisabled": "Sound is disabled",
+      "requiresCompletionWarning": "You need to answer all the questions correctly before continuing.",
+      "back": "Back",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "currentTime": "Current time:",
+      "totalTime": "Total time:",
+      "singleInteractionAnnouncement": "Interaction appeared:",
+      "multipleInteractionsAnnouncement": "Multiple interactions appeared.",
+      "videoPausedAnnouncement": "Video is paused",
+      "content": "Content",
+      "answered": "@answered answered",
+      "endcardTitle": "@answered Question(s) answered",
+      "endcardInformation": "You have answered @answered questions, click below to submit your answers.",
+      "endcardInformationOnSubmitButtonDisabled": "You have answered @answered questions.",
+      "endcardInformationNoAnswers": "You have not answered any questions.",
+      "endcardInformationMustHaveAnswer": "You have to answer at least one question before you can submit your answers.",
+      "endcardSubmitButton": "Submit Answers",
+      "endcardSubmitMessage": "Your answers have been submitted!",
+      "endcardTableRowAnswered": "Answered questions",
+      "endcardTableRowScore": "Score",
+      "endcardAnsweredScore": "answered",
+      "endCardTableRowSummaryWithScore": "You got @score out of @total points for the @question that appeared after @minutes minutes and @seconds seconds.",
+      "endCardTableRowSummaryWithoutScore": "You have answered the @question that appeared after @minutes minutes and @seconds seconds.",
+      "videoProgressBar": "Video progress",
+      "howToCreateInteractions": "Play the video to start creating interactions"
+    }
+  }
+}

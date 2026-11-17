@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question_categories>
+  <question_category id="65">
+    <name>top</name>
+    <contextid>6120</contextid>
+    <contextlevel>50</contextlevel>
+    <contextinstanceid>46</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.oecs.org+240221000848+ebGmDH</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <question_bank_entries>
+    </question_bank_entries>
+  </question_category>
+  <question_category id="66">
+    <name>Default for Micro Pilots</name>
+    <contextid>6203</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>1106</contextinstanceid>
+    <info>The default category for questions shared in context 'Micro Pilots'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.oecs.org+240219232904+nI6Xo8</stamp>
+    <parent>68</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <question_bank_entries>
+      <question_bank_entry id="113">
+        <questioncategoryid>66</questioncategoryid>
+        <idnumber>$@NULL@$</idnumber>
+        <ownerid>4</ownerid>
+        <question_version>
+          <question_versions id="201">
+            <version>1</version>
+            <status>ready</status>
+            <questions>
+              <question id="201">
+                <parent>0</parent>
+                <name>Question 1</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;The micro pilot of the curriculum refers to &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219233334+T477er</stamp>
+                <timecreated>1708385614</timecreated>
+                <timemodified>1708385614</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="585">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a large scale to selected schools.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="586">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a small scale to selected schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="587">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the entire curriculum to all schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="155">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>1</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="202">
+            <version>2</version>
+            <status>ready</status>
+            <questions>
+              <question id="202">
+                <parent>0</parent>
+                <name>Question 1</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;The micro pilot of the curriculum refers to &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219233845+RXPD50</stamp>
+                <timecreated>1708385925</timecreated>
+                <timemodified>1708385925</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="588">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a large scale to selected schools.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="589">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a small scale to selected schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="590">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the entire curriculum to all schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="156">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="203">
+            <version>3</version>
+            <status>ready</status>
+            <questions>
+              <question id="203">
+                <parent>0</parent>
+                <name>Question 1</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;The micro pilot of the curriculum refers to &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219233936+y12svE</stamp>
+                <timecreated>1708385976</timecreated>
+                <timemodified>1708385976</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="591">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a large scale to selected schools.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="592">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a small scale to selected schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="593">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the entire curriculum to all schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="157">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="204">
+            <version>4</version>
+            <status>ready</status>
+            <questions>
+              <question id="204">
+                <parent>0</parent>
+                <name>Question 1</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;The micro pilot of the curriculum refers to &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219233951+6APL7g</stamp>
+                <timecreated>1708385991</timecreated>
+                <timemodified>1708385991</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="594">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a large scale to selected schools.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="595">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a small scale to selected schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="596">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the entire curriculum to all schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="158">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="205">
+            <version>5</version>
+            <status>ready</status>
+            <questions>
+              <question id="205">
+                <parent>0</parent>
+                <name>Question 1</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;The micro pilot of the curriculum refers to &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219234414+kmW8dC</stamp>
+                <timecreated>1708386254</timecreated>
+                <timemodified>1708386254</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="597">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a large scale to selected schools.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="598">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the curriculum on a small scale to selected schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="599">
+                      <answertext>&lt;p class="MsoListParagraph" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Testing the entire curriculum to all schools&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="159">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+        </question_version>
+      </question_bank_entry>
+      <question_bank_entry id="114">
+        <questioncategoryid>66</questioncategoryid>
+        <idnumber>$@NULL@$</idnumber>
+        <ownerid>4</ownerid>
+        <question_version>
+          <question_versions id="206">
+            <version>1</version>
+            <status>ready</status>
+            <questions>
+              <question id="206">
+                <parent>0</parent>
+                <name>Question 2</name>
+                <questiontext>&lt;p&gt;Pilot testing enables the curriculum developers to&amp;nbsp;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219234311+kF6WeV</stamp>
+                <timecreated>1708386191</timecreated>
+                <timemodified>1708386191</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="600">
+                      <answertext>&lt;p class="MsoListParagraphCxSpFirst" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Identify which sections need to be strengthened or dropped.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraphCxSpLast" style="margin-left: .75in; mso-add-space: auto; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&amp;nbsp;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="601">
+                      <answertext>&lt;p&gt;&lt;span style="font-family: 'Century',serif;"&gt;Determine the sections of the curriculum that work and are maintained.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="602">
+                      <answertext>&lt;p&gt;All of the optiond&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="160">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>1</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="207">
+            <version>2</version>
+            <status>ready</status>
+            <questions>
+              <question id="207">
+                <parent>0</parent>
+                <name>Question 2</name>
+                <questiontext>&lt;p&gt;Pilot testing enables the curriculum developers to&amp;nbsp;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240220000334+ejocxa</stamp>
+                <timecreated>1708387414</timecreated>
+                <timemodified>1708387414</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="603">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Identify which sections need to be strengthened or dropped.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="604">
+                      <answertext>&lt;p&gt;&lt;span style="font-family: 'Century',serif;"&gt;Determine the sections of the curriculum that work and are maintained.&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="605">
+                      <answertext>&lt;p&gt;All of the options&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="161">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>1</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+        </question_version>
+      </question_bank_entry>
+      <question_bank_entry id="115">
+        <questioncategoryid>66</questioncategoryid>
+        <idnumber>$@NULL@$</idnumber>
+        <ownerid>4</ownerid>
+        <question_version>
+          <question_versions id="208">
+            <version>1</version>
+            <status>ready</status>
+            <questions>
+              <question id="208">
+                <parent>0</parent>
+                <name>Question 3</name>
+                <questiontext>&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif; mso-fareast-font-family: Century; mso-bidi-font-family: Century;"&gt;&lt;span style="mso-list: Ignore;"&gt;1.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;!--[endif]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Micro-pilot should assess&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif; mso-fareast-font-family: Century; mso-bidi-font-family: Century;"&gt;&lt;span style="mso-list: Ignore;"&gt;1.&lt;/span&gt;&lt;/span&gt;&lt;!--[endif]--&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219234736+RMubTH</stamp>
+                <timecreated>1708386456</timecreated>
+                <timemodified>1708386456</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="606">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, resources, and content&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="607">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, subjects, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="608">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Cross-curricula content, research, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="162">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="209">
+            <version>2</version>
+            <status>ready</status>
+            <questions>
+              <question id="209">
+                <parent>0</parent>
+                <name>Question 3</name>
+                <questiontext>&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif; mso-fareast-font-family: Century; mso-bidi-font-family: Century;"&gt;&lt;span style="mso-list: Ignore;"&gt;1.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;!--[endif]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Micro-pilot should assess&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif; mso-fareast-font-family: Century; mso-bidi-font-family: Century;"&gt;&lt;span style="mso-list: Ignore;"&gt;1.&lt;/span&gt;&lt;/span&gt;&lt;!--[endif]--&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219235819+IAGJKo</stamp>
+                <timecreated>1708387099</timecreated>
+                <timemodified>1708387099</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="609">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, resources, and content&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="610">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, subjects, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="611">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Cross-curricula content, research, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="163">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="210">
+            <version>3</version>
+            <status>ready</status>
+            <questions>
+              <question id="210">
+                <parent>0</parent>
+                <name>Question 3</name>
+                <questiontext>&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif;"&gt;Micro-pilot should assess&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo1;"&gt;&lt;!-- [if !supportLists]--&gt;&lt;span style="font-family: 'Century',serif; mso-fareast-font-family: Century; mso-bidi-font-family: Century;"&gt;&lt;span style="mso-list: Ignore;"&gt;1.&lt;/span&gt;&lt;/span&gt;&lt;!--[endif]--&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219235845+lEAcwu</stamp>
+                <timecreated>1708387125</timecreated>
+                <timemodified>1708387125</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="612">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, resources, and content&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="613">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, subjects, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="614">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Cross-curricula content, research, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="164">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="211">
+            <version>4</version>
+            <status>ready</status>
+            <questions>
+              <question id="211">
+                <parent>0</parent>
+                <name>Question 3</name>
+                <questiontext>&lt;p&gt;Micro pilots should assess&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219235925+Pc6XWw</stamp>
+                <timecreated>1708387165</timecreated>
+                <timemodified>1708387165</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="615">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, resources, and content&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="616">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Instructional strategies, subjects, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="617">
+                      <answertext>&lt;p class="MsoNormal" style="line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Cross-curricula content, research, and context&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="165">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+        </question_version>
+      </question_bank_entry>
+      <question_bank_entry id="116">
+        <questioncategoryid>66</questioncategoryid>
+        <idnumber>$@NULL@$</idnumber>
+        <ownerid>4</ownerid>
+        <question_version>
+          <question_versions id="212">
+            <version>1</version>
+            <status>ready</status>
+            <questions>
+              <question id="212">
+                <parent>0</parent>
+                <name>Question 4</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;Micro pilot of the curriculum is used&lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219234939+DkQyd6</stamp>
+                <timecreated>1708386579</timecreated>
+                <timemodified>1708386579</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="618">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;In secondary school classes&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="619">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;In primary school classes&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="620">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;All educational institutions&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="166">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+        </question_version>
+      </question_bank_entry>
+      <question_bank_entry id="117">
+        <questioncategoryid>66</questioncategoryid>
+        <idnumber>$@NULL@$</idnumber>
+        <ownerid>4</ownerid>
+        <question_version>
+          <question_versions id="213">
+            <version>1</version>
+            <status>ready</status>
+            <questions>
+              <question id="213">
+                <parent>0</parent>
+                <name>Question 5</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;Two activities teachers are involved in during micro-pilot are &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240219235128+pcQM3W</stamp>
+                <timecreated>1708386688</timecreated>
+                <timemodified>1708386688</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="621">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Simulation and passive participation&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="622">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Review and feedback&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="623">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Observation and disclosure &lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="167">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+          <question_versions id="214">
+            <version>2</version>
+            <status>ready</status>
+            <questions>
+              <question id="214">
+                <parent>0</parent>
+                <name>Question 5</name>
+                <questiontext>&lt;p&gt;&lt;span style="font-size: 11.0pt; line-height: 107%; font-family: 'Century',serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;Two activities teachers are involved in during micro-pilot are &lt;/span&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback></generalfeedback>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.oecs.org+240220000051+fuSWVE</stamp>
+                <timecreated>1708387251</timecreated>
+                <timemodified>1708387251</timemodified>
+                <createdby>4</createdby>
+                <modifiedby>4</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="624">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Simulation and passive participation&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="625">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Review and feedback&lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="626">
+                      <answertext>&lt;p class="MsoNormal" style="margin-left: .25in; line-height: 150%;"&gt;&lt;span style="font-family: 'Century',serif;"&gt;Observation and disclosure &lt;/span&gt;&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback></feedback>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="168">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>&lt;p&gt;Your answer is correct.&lt;/p&gt;</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>&lt;p&gt;Your answer is incorrect.&lt;/p&gt;</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>abc</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>0</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            </questions>
+          </question_versions>
+        </question_version>
+      </question_bank_entry>
+    </question_bank_entries>
+  </question_category>
+  <question_category id="67">
+    <name>Default for SQLT</name>
+    <contextid>6120</contextid>
+    <contextlevel>50</contextlevel>
+    <contextinstanceid>46</contextinstanceid>
+    <info>The default category for questions shared in context 'SQLT'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.oecs.org+240219232904+fxvRCD</stamp>
+    <parent>65</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <question_bank_entries>
+    </question_bank_entries>
+  </question_category>
+  <question_category id="68">
+    <name>top</name>
+    <contextid>6203</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>1106</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.oecs.org+240221000849+c8074x</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <question_bank_entries>
+    </question_bank_entries>
+  </question_category>
+</question_categories>

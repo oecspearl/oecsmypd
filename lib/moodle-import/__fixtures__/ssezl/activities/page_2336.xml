@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<activity id="952" moduleid="2336" modulename="page" contextid="9611">
+  <page id="952">
+    <name>Module Outline</name>
+    <intro></intro>
+    <introformat>1</introformat>
+    <content>&lt;p&gt;&lt;img class="img-fluid" role="presentation" src="@@PLUGINFILE@@/Module%2013%20Banner.png" alt="" width="1200" height="300"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe src="https://docs.google.com/document/d/e/2PACX-1vR8YgZGZJBhB1J27D-2jxXaXPm4caQka4_0UvRpAAHZhRgqDRlw-bDy6bUd7NLvfA/pub?embedded=true" width="900" height="691"&gt;&lt;/iframe&gt;&lt;/p&gt;</content>
+    <contentformat>1</contentformat>
+    <legacyfiles>0</legacyfiles>
+    <legacyfileslast>$@NULL@$</legacyfileslast>
+    <display>5</display>
+    <displayoptions>a:2:{s:10:"printintro";s:1:"0";s:17:"printlastmodified";s:1:"1";}</displayoptions>
+    <revision>2</revision>
+    <timemodified>1736292152</timemodified>
+  </page>
+</activity>

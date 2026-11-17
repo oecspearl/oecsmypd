@@ -1,0 +1,207 @@
+{
+  "machine_name": "H5P.ImageHotspots",
+  "name": "Module 13 Overview",
+  "content": {
+    "iconType": "icon",
+    "icon": "info",
+    "color": "#0acfbb",
+    "hotspots": [
+      {
+        "position": {
+          "x": 38,
+          "y": 28.849052540913007
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Welcome to Module 13: Supporting Social and Emotional Well-being in Young Children.</strong></p><hr><p>The purpose of this module on Social and Emotional Well-Being in Young Children is to provide Early Childhood Education teachers with practical, job-embedded professional opportunities to learn about the importance of 3 to 4-year-old children’s development of social and emotional skills for present well-being, plus future school and lifelong success. Participants will learn evidence-based practices to enhance children’s social and emotional development.&nbsp; The Module is comprised of four interactive, synchronous sessions, two associated asynchronous learning activities, and two products that are designed to assist participants with their daily practice. These practical, job-embedded activities and products will enable participants to apply the new knowledge and skills that they are learning in the Module in their work contexts.&nbsp;</p><p>Go <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=1\">HERE</a> to learn more.</p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "4b7fe9a6-c8ad-46f7-a2a9-3cdf7fae8917"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 31.2,
+          "y": 63.3667097329888
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Module Outcomes</strong></p><hr><ul><li>Describe key findings of current research on the importance of young children’s development of strong social and emotional skills for well-being and future school and lifelong success.</li><li>List specific social and emotional skills appropriate for 3-4-year-old children.</li></ul><p>Access Week 1 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=2\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "6bfbaec0-f259-49c8-98a9-a5d4d91d192c"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 38.4,
+          "y": 80.29177433247202
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Module Outcomes</strong></p><hr><ul><li>Implement specific teaching/learning strategies to support the development of social and emotional skills in young children.</li></ul><p>Access Week 2 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=3\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "24254993-ede3-45a6-9a34-f50a5d683c2d"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 62,
+          "y": 28.176141257536607
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Applied Learning Product 1</strong></p><hr><ul><li>List specific social and emotional skills appropriate for 3-4-year-old children.</li><li>Implement specific teaching/learning strategies to support the development of social and emotional skills in young children.</li></ul><p>Access Applied Learning Product 1 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=4\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "fe7006ce-a7c9-4da7-bfc2-c87564da6b10"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 68.8,
+          "y": 46.656976744186046
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Module Outcomes</strong></p><hr><ul><li>Implement specific teaching/learning strategies to support the development of social and emotional skills in young children</li></ul><p>Access Week 4 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=5\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "9bc14440-d280-42ef-bcd8-ccd9e6ab1069"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 69.19999999999999,
+          "y": 63.44745908699397
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Applied Learning Product 2</strong></p><hr><ul><li>Describe the implication of the research and the recommended teaching/learning strategies on programming decisions in ECE centers and communication with parents/caregivers.</li></ul><p>Access Applied Learning Product 2 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=6\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "a7404baa-1e6a-4e04-bdb8-68c95c8181a6"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 63.2,
+          "y": 80.55017226528854
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Module Outcomes</strong></p><hr><ul><li>Describe the implication of the research and the recommended teaching/learning strategies on programming decisions in ECE centers and communication with parents/caregivers.</li></ul><p>Access Week 6 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/course/view.php?id=96&amp;section=7\">HERE</a></p>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "1ee8851e-319a-4d21-ae59-bfa43a9f9ca9"
+          }
+        ]
+      },
+      {
+        "position": {
+          "x": 31.2,
+          "y": 45.47265288544358
+        },
+        "alwaysFullscreen": false,
+        "content": [
+          {
+            "params": {
+              "text": "<p><strong>Live Sessions and Recordings</strong></p><hr><ul><li>Join synchronous sessions <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://meet.google.com/opr-fgst-owx?authuser=0\">HERE</a></li><li>View recordings of live sessions <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://new-moodle.oecs.org/mod/googlemeet/view.php?id=2343\">HERE</a></li></ul>"
+            },
+            "library": "H5P.Text 1.1",
+            "metadata": {
+              "contentType": "Text",
+              "license": "U",
+              "title": "Untitled Text",
+              "authors": [],
+              "changes": []
+            },
+            "subContentId": "e68c36fc-acb9-4b60-81bf-2464cc4ede74"
+          }
+        ]
+      }
+    ],
+    "hotspotNumberLabel": "Hotspot #num",
+    "closeButtonLabel": "Close",
+    "disableScaling": false,
+    "image": {
+      "path": "images/image-677171b78b8a3.png",
+      "mime": "image/png",
+      "copyright": {
+        "license": "U"
+      },
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}
