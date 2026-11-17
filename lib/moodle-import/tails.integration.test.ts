@@ -36,6 +36,7 @@ suite("conferences + forums tail", () => {
       conferences: result.conferences,
       discussions: result.discussions,
       replies: result.replies,
+      linksRemapped: result.linksRemapped,
     });
 
     expect(result.conferences).toBeGreaterThanOrEqual(1);
@@ -58,5 +59,16 @@ suite("conferences + forums tail", () => {
       .eq("course_id", result.courseId);
     expect((discs ?? []).length).toBeGreaterThanOrEqual(1);
     expect(discs?.some((d) => d.author_id)).toBe(true);
+
+    // No lesson still links into the dead Moodle; remapped links point at MyPD.
+    const { data: lessons } = await supabase
+      .from("lessons")
+      .select("content")
+      .eq("course_id", result.courseId);
+    const allContent = JSON.stringify(lessons ?? []);
+    expect(allContent).not.toContain("new-moodle.oecs.org");
+    if (result.linksRemapped > 0) {
+      expect(allContent).toContain(`/course/${result.courseId}`);
+    }
   }, 180000);
 });

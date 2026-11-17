@@ -13,6 +13,7 @@ import { parseEnrolledUsers, type EnrolledUser } from "./people-parser";
 import { importPeopleForCourse } from "./people-import";
 import { parseFinalGrades } from "./grade-parser";
 import { parseConferences, parseForums } from "./tails-parser";
+import { remapContentLinks } from "./link-remap";
 
 export interface ClassImportResult {
   facilitator: string;
@@ -30,6 +31,7 @@ export interface GroupImportResult {
   conferences: number;
   discussions: number;
   replies: number;
+  linksRemapped: number;
 }
 
 /** Import Google Meet sessions as video conferences (content, no author mapping). */
@@ -39,13 +41,18 @@ async function importConferences(
   archive: Parameters<typeof parseEnrolledUsers>[0]
 ): Promise<number> {
   let count = 0;
+  const seen = new Set<string>();
   for (const c of parseConferences(archive)) {
-    const meetingId = c.url.split("/").filter(Boolean).pop() || c.url;
+    const meetCode = c.url.split("/").filter(Boolean).pop() || c.url;
+    if (seen.has(meetCode)) continue; // same room reused for several sessions
+    seen.add(meetCode);
+    // meeting_id is globally unique; the same Meet room recurs across courses,
+    // so scope the id to this course while keeping the real join URL intact.
     const { error } = await supabase.from("video_conferences").insert({
       course_id: courseId,
       title: c.title || "Synchronous Session",
       description: c.intro,
-      meeting_id: meetingId,
+      meeting_id: `${courseId}:${meetCode}`,
       meeting_url: c.url,
       google_meet_link: c.url,
       video_provider: "google_meet",
@@ -106,6 +113,75 @@ async function importForums(
     }
   }
   return { discussions, replies };
+}
+
+/**
+ * Rewrite dead links into the old Moodle (new-moodle.oecs.org) to their MyPD
+ * equivalents: section/week links -> that week's first lesson, everything else
+ * -> the course page. Runs after content + conferences exist so the targets
+ * are in place.
+ */
+async function remapLinks(
+  supabase: SupabaseClient,
+  courseId: string,
+  archive: Parameters<typeof parseEnrolledUsers>[0]
+): Promise<number> {
+  // section number -> that subject's first lesson URL
+  const { data: subjects } = await supabase
+    .from("subjects")
+    .select("id, order")
+    .eq("course_id", courseId);
+  const lessonUrlBySectionNumber = new Map<number, string>();
+  for (const s of subjects ?? []) {
+    const { data: lesson } = await supabase
+      .from("lessons")
+      .select("id")
+      .eq("subject_id", s.id)
+      .order("order", { ascending: true })
+      .limit(1)
+      .maybeSingle();
+    if (lesson) {
+      lessonUrlBySectionNumber.set(
+        s.order as number,
+        `/course/${courseId}/lesson/${lesson.id}`
+      );
+    }
+  }
+
+  // Moodle section id -> section number (from the backup's section.xml files)
+  const sectionIdToNumber = new Map<string, number>();
+  for (const path of archive.list()) {
+    const m = /sections\/section_(\d+)\/section\.xml$/.exec(path);
+    if (!m) continue;
+    const xml = archive.readText(path);
+    const nm = /<number>(\d+)<\/number>/.exec(xml);
+    if (nm) sectionIdToNumber.set(m[1], Number(nm[1]));
+  }
+
+  const maps = {
+    coursePath: `/course/${courseId}`,
+    lessonUrlBySectionNumber,
+    sectionIdToNumber,
+  };
+
+  const { data: lessons } = await supabase
+    .from("lessons")
+    .select("id, content")
+    .eq("course_id", courseId);
+
+  let remapped = 0;
+  for (const lesson of lessons ?? []) {
+    const before = JSON.stringify(lesson.content);
+    if (!before.includes("new-moodle.oecs.org")) continue;
+    const after = remapContentLinks(before, maps);
+    if (after === before) continue;
+    const { error } = await supabase
+      .from("lessons")
+      .update({ content: JSON.parse(after) })
+      .eq("id", lesson.id);
+    if (!error) remapped++;
+  }
+  return remapped;
 }
 
 export async function importCourseGroup(
@@ -177,6 +253,9 @@ export async function importCourseGroup(
   // Forum threads (authors resolved via the representative copy's people).
   const forum = await importForums(supabase, courseId, repArchive, repPeople);
 
+  // Now that lessons + conferences exist, repoint dead Moodle links at MyPD.
+  const linksRemapped = await remapLinks(supabase, courseId, repArchive);
+
   return {
     topic: group.topic,
     courseId,
@@ -184,5 +263,6 @@ export async function importCourseGroup(
     conferences,
     discussions: forum.discussions,
     replies: forum.replies,
+    linksRemapped,
   };
 }
