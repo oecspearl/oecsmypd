@@ -70,5 +70,22 @@ suite("conferences + forums tail", () => {
     if (result.linksRemapped > 0) {
       expect(allContent).toContain(`/course/${result.courseId}`);
     }
+
+    // Course header image recovered from the backup.
+    const { data: course } = await supabase
+      .from("courses")
+      .select("thumbnail")
+      .eq("id", result.courseId)
+      .single();
+    expect(course?.thumbnail).toBeTruthy();
+
+    // Real completion: progress is NOT a uniform 100% across learners.
+    const { data: enr } = await supabase
+      .from("enrollments")
+      .select("progress_percentage")
+      .eq("course_id", result.courseId);
+    const distinct = new Set((enr ?? []).map((e) => e.progress_percentage));
+    expect(distinct.size).toBeGreaterThan(1);
+    expect([...distinct].some((p) => (p as number) < 100)).toBe(true);
   }, 180000);
 });

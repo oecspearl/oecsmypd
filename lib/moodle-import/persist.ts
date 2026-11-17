@@ -27,6 +27,10 @@ export interface ImportSummary {
   /** Files referenced by the course but absent from the backup (lost in the
    *  Moodle crash). Names for the facilitator re-upload inventory. */
   missingFiles: string[];
+  /** The course's header image was recovered and set as the thumbnail. */
+  thumbnailSet: boolean;
+  /** A header image was declared in the backup but its bytes were lost. */
+  thumbnailMissing: boolean;
 }
 
 interface FileEntry {
@@ -46,6 +50,20 @@ function parseFilesXml(xml: string): Map<string, FileEntry> {
     map.set(basename(filename), { contenthash, mimetype });
   }
   return map;
+}
+
+/** The course's header image (Moodle "overviewfiles" filearea), if any. */
+function parseOverviewImage(xml: string): FileEntry & { filename: string } | null {
+  for (const block of xml.match(/<file\b[\s\S]*?<\/file>/g) ?? []) {
+    if (!/<filearea>overviewfiles<\/filearea>/.test(block)) continue;
+    const filename = /<filename>([\s\S]*?)<\/filename>/.exec(block)?.[1]?.trim();
+    const contenthash = /<contenthash>([\s\S]*?)<\/contenthash>/.exec(block)?.[1]?.trim();
+    const mimetype =
+      /<mimetype>([\s\S]*?)<\/mimetype>/.exec(block)?.[1]?.trim() || "image/png";
+    if (!filename || filename === "." || !contenthash) continue;
+    return { filename, contenthash, mimetype };
+  }
+  return null;
 }
 
 function basename(ref: string): string {
@@ -188,6 +206,29 @@ export async function importBackupToSupabase(
     filesUploaded++;
   }
 
+  // 2b. Course header image. Declared in ~86/98 backups; the bytes survive in
+  //     fewer (the crash). Upload when present; otherwise flag for inventory.
+  let thumbnailSet = false;
+  let thumbnailMissing = false;
+  const overview = parseOverviewImage(filesXml);
+  if (overview) {
+    const blob = archive.readBuffer(
+      `files/${overview.contenthash.slice(0, 2)}/${overview.contenthash}`
+    );
+    if (blob) {
+      const key = storageKey(courseId, overview.contenthash, overview.filename);
+      const { error: upErr } = await supabase.storage
+        .from(BUCKET)
+        .upload(key, blob, { contentType: overview.mimetype, upsert: true });
+      if (!upErr) {
+        const { data: pub } = supabase.storage.from(BUCKET).getPublicUrl(key);
+        await supabase.from("courses").update({ thumbnail: pub.publicUrl }).eq("id", courseId);
+        thumbnailSet = true;
+      }
+    }
+    if (!thumbnailSet) thumbnailMissing = true;
+  }
+
   // 3. Rebuild the course with real URLs. Missing files resolve to "" so they
   //    render as unavailable rather than as broken filename links.
   const built = await buildOnce((ref) => urlMap.get(ref) ?? "");
@@ -303,5 +344,7 @@ export async function importBackupToSupabase(
     questions: questionCount,
     filesUploaded,
     missingFiles: [...missing].sort(),
+    thumbnailSet,
+    thumbnailMissing,
   };
 }

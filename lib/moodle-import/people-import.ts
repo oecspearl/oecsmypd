@@ -12,6 +12,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import { randomUUID } from "node:crypto";
 import type { EnrolledUser } from "./people-parser";
 import type { FinalGrade } from "./grade-parser";
+import type { CourseCompletion } from "./completion-parser";
 
 export interface PeopleSummary {
   usersCreated: number;
@@ -28,6 +29,28 @@ export interface PeopleOptions {
   finalGrades?: Map<string, FinalGrade>;
   /** The course's "Final Grade" grade item to attach grades to. */
   gradeItemId?: string;
+  /** Real per-user activity completion for this backup, for true progress. */
+  completion?: CourseCompletion;
+}
+
+/**
+ * Derive a learner's enrollment progress + completion date from real activity
+ * completion. No tracking data (course never used completion) -> assume done.
+ */
+function completionFor(
+  completion: CourseCompletion | undefined,
+  moodleId: string,
+  now: string
+): { progress: number; completedAt: string | null } {
+  if (!completion || completion.trackedActivities === 0) {
+    return { progress: 100, completedAt: now };
+  }
+  const rec = completion.byUser.get(moodleId);
+  const completed = rec?.completed ?? 0;
+  const progress = Math.round((completed / completion.trackedActivities) * 100);
+  const completedAt =
+    progress >= 100 && rec?.lastAt ? new Date(rec.lastAt * 1000).toISOString() : null;
+  return { progress, completedAt };
 }
 
 export async function importPeopleForCourse(
@@ -117,8 +140,11 @@ export async function importPeopleForCourse(
         .maybeSingle();
       if (!ex) {
         // Historical learners: 'active' so they appear in the app's views
-        // (gradebook, roster — all filter status='active'), with completion
-        // recorded via completed_at + 100% progress. Not re-certified.
+        // (gradebook, roster — all filter status='active'). Progress and the
+        // completion date come from the learner's real Moodle activity
+        // completion; with no tracking data we fall back to 100%. Not
+        // re-certified.
+        const { progress, completedAt } = completionFor(opts.completion, p.moodleId, now);
         await supabase.from("enrollments").insert({
           course_id: courseId,
           class_id: classId,
@@ -126,8 +152,8 @@ export async function importPeopleForCourse(
           status: "active",
           enrolled_at: now,
           updated_at: now,
-          completed_at: now,
-          progress_percentage: 100,
+          completed_at: completedAt,
+          progress_percentage: progress,
         });
         enrollments++;
       }

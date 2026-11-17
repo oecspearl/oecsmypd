@@ -12,6 +12,7 @@ import { importBackupToSupabase } from "./persist";
 import { parseEnrolledUsers, type EnrolledUser } from "./people-parser";
 import { importPeopleForCourse } from "./people-import";
 import { parseFinalGrades } from "./grade-parser";
+import { parseCompletions } from "./completion-parser";
 import { parseConferences, parseForums } from "./tails-parser";
 import { remapContentLinks } from "./link-remap";
 
@@ -212,6 +213,7 @@ export async function importCourseGroup(
     if (backup.shortname === rep.shortname) repPeople = people;
     const gb = archive.readText("gradebook.xml");
     const finalGrades = gb ? parseFinalGrades(gb) : new Map();
+    const completion = parseCompletions(archive);
 
     // Create the course's single "Final Grade" column the first time a
     // facilitator's copy actually has grades.
@@ -238,7 +240,7 @@ export async function importCourseGroup(
       courseId,
       backup.facilitator || backup.shortname,
       people,
-      { finalGrades, gradeItemId }
+      { finalGrades, gradeItemId, completion }
     );
     classes.push({
       facilitator: backup.facilitator,
